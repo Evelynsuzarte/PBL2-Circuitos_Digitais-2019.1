@@ -1,0 +1,508 @@
+Analysis & Synthesis report for problema3_industria
+Tue Sep 24 00:38:25 2019
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Parameter Settings for User Entity Instance: exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component
+  9. Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component
+ 10. Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_constant0:inst|lpm_constant:lpm_constant_component
+ 11. Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_constant1:inst26|lpm_constant:lpm_constant_component
+ 12. Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_constant2:inst27|lpm_constant:lpm_constant_component
+ 13. Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_constant3:inst28|lpm_constant:lpm_constant_component
+ 14. Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                               ;
++-----------------------------+----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Sep 24 00:38:25 2019        ;
+; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name               ; problema3_industria                          ;
+; Top-level Entity Name       ; problema3_industria                          ;
+; Family                      ; ACEX1K                                       ;
+; Total logic elements        ; 114                                          ;
+; Total pins                  ; 20                                           ;
+; Total memory bits           ; 0                                            ;
+; Total PLLs                  ; 0                                            ;
++-----------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                            ;
++--------------------------------------------------------------+---------------------+---------------------+
+; Option                                                       ; Setting             ; Default Value       ;
++--------------------------------------------------------------+---------------------+---------------------+
+; Device                                                       ; EP1K100QC208-3      ;                     ;
+; Top-level entity name                                        ; problema3_industria ; problema3_industria ;
+; Family name                                                  ; ACEX1K              ; Stratix II          ;
+; Use Generated Physical Constraints File                      ; Off                 ;                     ;
+; Use smart compilation                                        ; Off                 ; Off                 ;
+; Create Debugging Nodes for IP Cores                          ; Off                 ; Off                 ;
+; Preserve fewer node names                                    ; On                  ; On                  ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                 ; Off                 ;
+; Verilog Version                                              ; Verilog_2001        ; Verilog_2001        ;
+; VHDL Version                                                 ; VHDL93              ; VHDL93              ;
+; State Machine Processing                                     ; Auto                ; Auto                ;
+; Safe State Machine                                           ; Off                 ; Off                 ;
+; Extract Verilog State Machines                               ; On                  ; On                  ;
+; Extract VHDL State Machines                                  ; On                  ; On                  ;
+; Ignore Verilog initial constructs                            ; Off                 ; Off                 ;
+; Iteration limit for constant Verilog loops                   ; 5000                ; 5000                ;
+; Iteration limit for non-constant Verilog loops               ; 250                 ; 250                 ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                  ; On                  ;
+; Parallel Synthesis                                           ; Off                 ; Off                 ;
+; NOT Gate Push-Back                                           ; On                  ; On                  ;
+; Power-Up Don't Care                                          ; On                  ; On                  ;
+; Remove Redundant Logic Cells                                 ; Off                 ; Off                 ;
+; Remove Duplicate Registers                                   ; On                  ; On                  ;
+; Ignore CARRY Buffers                                         ; Off                 ; Off                 ;
+; Ignore CASCADE Buffers                                       ; Off                 ; Off                 ;
+; Ignore GLOBAL Buffers                                        ; Off                 ; Off                 ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                 ; Off                 ;
+; Ignore LCELL Buffers                                         ; Off                 ; Off                 ;
+; Ignore SOFT Buffers                                          ; On                  ; On                  ;
+; Limit AHDL Integers to 32 Bits                               ; Off                 ; Off                 ;
+; Auto Implement in ROM                                        ; Off                 ; Off                 ;
+; Optimization Technique                                       ; Area                ; Area                ;
+; Carry Chain Length                                           ; 32                  ; 32                  ;
+; Cascade Chain Length                                         ; 2                   ; 2                   ;
+; Auto Carry Chains                                            ; On                  ; On                  ;
+; Auto Open-Drain Pins                                         ; On                  ; On                  ;
+; Auto ROM Replacement                                         ; On                  ; On                  ;
+; Auto RAM Replacement                                         ; On                  ; On                  ;
+; Auto Clock Enable Replacement                                ; On                  ; On                  ;
+; Strict RAM Replacement                                       ; Off                 ; Off                 ;
+; Auto Resource Sharing                                        ; Off                 ; Off                 ;
+; Allow Any RAM Size For Recognition                           ; Off                 ; Off                 ;
+; Allow Any ROM Size For Recognition                           ; Off                 ; Off                 ;
+; Use LogicLock Constraints during Resource Balancing          ; On                  ; On                  ;
+; Ignore translate_off and synthesis_off directives            ; Off                 ; Off                 ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                  ; On                  ;
+; HDL message level                                            ; Level2              ; Level2              ;
+; Suppress Register Optimization Related Messages              ; Off                 ; Off                 ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                 ; 100                 ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                 ; 100                 ;
+; Block Design Naming                                          ; Auto                ; Auto                ;
+; Synthesis Effort                                             ; Auto                ; Auto                ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                  ; On                  ;
+; Analysis & Synthesis Message Level                           ; Medium              ; Medium              ;
++--------------------------------------------------------------+---------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+
+; problema3_industria.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/problema3_industria.bdf     ;
+; BLOCO_MAQ_PRINCIPAL.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/BLOCO_MAQ_PRINCIPAL.bdf     ;
+; somador_completo.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/somador_completo.bdf        ;
+; somadorSubtrator_rolhas.bdf      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/somadorSubtrator_rolhas.bdf ;
+; seletor.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/seletor.bdf                 ;
+; contador_de_rolhas.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/contador_de_rolhas.bdf      ;
+; divisor_frequencia.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/divisor_frequencia.bdf      ;
+; contador_2bits.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/contador_2bits.bdf          ;
+; demux_digito.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/demux_digito.bdf            ;
+; exibir_display.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/exibir_display.bdf          ;
+; 7447.bdf                         ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/others/maxplus2/7447.bdf                                      ;
+; lpm_mux1.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/lpm_mux1.tdf                ;
+; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File               ; e:/altera quartus 9.0/quartus/libraries/megafunctions/lpm_mux.inc                                     ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/lpm_mux.tdf                                     ;
+; aglobal90.inc                    ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/aglobal90.inc                                   ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/muxlut.inc                                      ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/bypassff.inc                                    ;
+; altshift.inc                     ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/altshift.inc                                    ;
+; altshift.tdf                     ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/altshift.tdf                                    ;
+; muxlut.tdf                       ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/muxlut.tdf                                      ;
+; 74185.bdf                        ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/others/maxplus2/74185.bdf                                     ;
+; 74273.bdf                        ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/others/maxplus2/74273.bdf                                     ;
+; lpm_mux0.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/lpm_mux0.tdf                ;
+; lpm_constant0.tdf                ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/lpm_constant0.tdf           ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/lpm_constant.inc                                ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/lpm_constant.tdf                                ;
+; lpm_constant1.tdf                ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/lpm_constant1.tdf           ;
+; lpm_constant2.tdf                ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/lpm_constant2.tdf           ;
+; lpm_constant3.tdf                ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/lpm_constant3.tdf           ;
+; lpm_compare0.tdf                 ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/lpm_compare0.tdf            ;
+; lpm_compare.inc                  ; yes             ; Auto-Found AHDL File               ; e:/altera quartus 9.0/quartus/libraries/megafunctions/lpm_compare.inc                                 ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/lpm_compare.tdf                                 ;
+; comptree.inc                     ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/comptree.inc                                    ;
+; comptree.tdf                     ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/comptree.tdf                                    ;
+; cmpchain.inc                     ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/cmpchain.inc                                    ;
+; cmpchain.tdf                     ; yes             ; Megafunction                       ; e:/altera quartus 9.0/quartus/libraries/megafunctions/cmpchain.tdf                                    ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++-----------------------------------+---------+
+; Resource                          ; Usage   ;
++-----------------------------------+---------+
+; Total logic elements              ; 114     ;
+; Total combinational functions     ; 105     ;
+;     -- Total 4-input functions    ; 52      ;
+;     -- Total 3-input functions    ; 25      ;
+;     -- Total 2-input functions    ; 10      ;
+;     -- Total 1-input functions    ; 18      ;
+;     -- Total 0-input functions    ; 0       ;
+; Total registers                   ; 36      ;
+; Total logic cells in carry chains ; 4       ;
+; I/O pins                          ; 20      ;
+; Maximum fan-out node              ; CLK     ;
+; Maximum fan-out                   ; 16      ;
+; Total fan-out                     ; 393     ;
+; Average fan-out                   ; 2.93    ;
++-----------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                            ;
++----------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                                                                       ; Library Name ;
++----------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |problema3_industria                         ; 114 (0)     ; 36           ; 0           ; 20   ; 78 (0)       ; 8 (0)             ; 28 (0)           ; 4 (0)           ; 0 (0)      ; |problema3_industria                                                                                                                      ; work         ;
+;    |BLOCO_MAQ_PRINCIPAL:inst3|               ; 10 (10)     ; 2            ; 0           ; 0    ; 8 (8)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|BLOCO_MAQ_PRINCIPAL:inst3                                                                                            ; work         ;
+;    |contador_de_rolhas:inst51|               ; 22 (0)      ; 8            ; 0           ; 0    ; 14 (0)       ; 0 (0)             ; 8 (0)            ; 4 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51                                                                                            ; work         ;
+;       |74273:inst46|                         ; 8 (8)       ; 8            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 8 (8)            ; 1 (1)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|74273:inst46                                                                               ; work         ;
+;       |lpm_compare0:inst29|                  ; 3 (0)       ; 0            ; 0           ; 0    ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 3 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29                                                                        ; work         ;
+;          |lpm_compare:lpm_compare_component| ; 3 (0)       ; 0            ; 0           ; 0    ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 3 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component                                      ; work         ;
+;             |comptree:comparator|            ; 3 (0)       ; 0            ; 0           ; 0    ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 3 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator                  ; work         ;
+;                |cmpchain:cmp_end|            ; 3 (3)       ; 0            ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 3 (3)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator|cmpchain:cmp_end ; work         ;
+;       |lpm_mux0:Multi_4|                     ; 5 (0)       ; 0            ; 0           ; 0    ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4                                                                           ; work         ;
+;          |lpm_mux:lpm_mux_component|         ; 5 (0)       ; 0            ; 0           ; 0    ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component                                                 ; work         ;
+;             |muxlut:$00011|                  ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00011                                   ; work         ;
+;             |muxlut:$00015|                  ; 3 (3)       ; 0            ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00015                                   ; work         ;
+;       |seletor:inst44|                       ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|seletor:inst44                                                                             ; work         ;
+;       |somadorSubtrator_rolhas:inst42|       ; 5 (0)       ; 0            ; 0           ; 0    ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42                                                             ; work         ;
+;          |somador_completo:inst34|           ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst34                                     ; work         ;
+;          |somador_completo:inst37|           ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst37                                     ; work         ;
+;          |somador_completo:inst38|           ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst38                                     ; work         ;
+;          |somador_completo:inst39|           ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst39                                     ; work         ;
+;    |exibir_display:inst1|                    ; 82 (0)      ; 26           ; 0           ; 0    ; 56 (0)       ; 8 (0)             ; 18 (0)           ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1                                                                                                 ; work         ;
+;       |74185:inst55|                         ; 21 (21)     ; 0            ; 0           ; 0    ; 21 (21)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|74185:inst55                                                                                    ; work         ;
+;       |74185:inst|                           ; 9 (9)       ; 0            ; 0           ; 0    ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|74185:inst                                                                                      ; work         ;
+;       |74273:inst46|                         ; 8 (8)       ; 8            ; 0           ; 0    ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|74273:inst46                                                                                    ; work         ;
+;       |7447:inst12|                          ; 7 (7)       ; 0            ; 0           ; 0    ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|7447:inst12                                                                                     ; work         ;
+;       |contador_2bits:inst8|                 ; 1 (1)       ; 1            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|contador_2bits:inst8                                                                            ; work         ;
+;       |divisor_frequencia:inst4|             ; 17 (17)     ; 17           ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 17 (17)          ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|divisor_frequencia:inst4                                                                        ; work         ;
+;       |lpm_mux1:inst11|                      ; 19 (0)      ; 0            ; 0           ; 0    ; 19 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|lpm_mux1:inst11                                                                                 ; work         ;
+;          |lpm_mux:lpm_mux_component|         ; 19 (0)      ; 0            ; 0           ; 0    ; 19 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component                                                       ; work         ;
+;             |muxlut:$00009|                  ; 4 (4)       ; 0            ; 0           ; 0    ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00009                                         ; work         ;
+;             |muxlut:$00011|                  ; 5 (5)       ; 0            ; 0           ; 0    ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00011                                         ; work         ;
+;             |muxlut:$00013|                  ; 4 (4)       ; 0            ; 0           ; 0    ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00013                                         ; work         ;
+;             |muxlut:$00015|                  ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00015                                         ; work         ;
++----------------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 36    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component ;
++------------------------+---------+--------------------------------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                                                     ;
++------------------------+---------+--------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                                             ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                                           ;
+; LPM_WIDTH              ; 4       ; Untyped                                                                  ;
+; LPM_SIZE               ; 2       ; Untyped                                                                  ;
+; LPM_WIDTHS             ; 1       ; Untyped                                                                  ;
+; LPM_PIPELINE           ; 0       ; Untyped                                                                  ;
+; CBXI_PARAMETER         ; mux_m9c ; Untyped                                                                  ;
+; DEVICE_FAMILY          ; ACEX1K  ; Untyped                                                                  ;
++------------------------+---------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component ;
++------------------------+---------+--------------------------------------------------------------------------------+
+; Parameter Name         ; Value   ; Type                                                                           ;
++------------------------+---------+--------------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                                                   ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                                                 ;
+; LPM_WIDTH              ; 8       ; Untyped                                                                        ;
+; LPM_SIZE               ; 4       ; Untyped                                                                        ;
+; LPM_WIDTHS             ; 2       ; Untyped                                                                        ;
+; LPM_PIPELINE           ; 0       ; Untyped                                                                        ;
+; CBXI_PARAMETER         ; mux_t9c ; Untyped                                                                        ;
+; DEVICE_FAMILY          ; ACEX1K  ; Untyped                                                                        ;
++------------------------+---------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_constant0:inst|lpm_constant:lpm_constant_component ;
++--------------------+------------------+---------------------------------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                                                  ;
++--------------------+------------------+---------------------------------------------------------------------------------------+
+; LPM_WIDTH          ; 8                ; Untyped                                                                               ;
+; LPM_CVALUE         ; 255              ; Untyped                                                                               ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                                               ;
+; CBXI_PARAMETER     ; lpm_constant_6j6 ; Untyped                                                                               ;
++--------------------+------------------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_constant1:inst26|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                                                    ;
++--------------------+------------------+-----------------------------------------------------------------------------------------+
+; LPM_WIDTH          ; 8                ; Untyped                                                                                 ;
+; LPM_CVALUE         ; 20               ; Untyped                                                                                 ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                                                 ;
+; CBXI_PARAMETER     ; lpm_constant_vf6 ; Untyped                                                                                 ;
++--------------------+------------------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_constant2:inst27|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                                                    ;
++--------------------+------------------+-----------------------------------------------------------------------------------------+
+; LPM_WIDTH          ; 8                ; Untyped                                                                                 ;
+; LPM_CVALUE         ; 10               ; Untyped                                                                                 ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                                                 ;
+; CBXI_PARAMETER     ; lpm_constant_bh6 ; Untyped                                                                                 ;
++--------------------+------------------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_constant3:inst28|lpm_constant:lpm_constant_component ;
++--------------------+------------------+-----------------------------------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                                                    ;
++--------------------+------------------+-----------------------------------------------------------------------------------------+
+; LPM_WIDTH          ; 8                ; Untyped                                                                                 ;
+; LPM_CVALUE         ; 0                ; Untyped                                                                                 ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                                                 ;
+; CBXI_PARAMETER     ; lpm_constant_qf6 ; Untyped                                                                                 ;
++--------------------+------------------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component ;
++------------------------+----------+------------------------------------------------------------------------------------------+
+; Parameter Name         ; Value    ; Type                                                                                     ;
++------------------------+----------+------------------------------------------------------------------------------------------+
+; lpm_width              ; 8        ; Untyped                                                                                  ;
+; LPM_REPRESENTATION     ; UNSIGNED ; Untyped                                                                                  ;
+; LPM_PIPELINE           ; 0        ; Untyped                                                                                  ;
+; CHAIN_SIZE             ; 8        ; Untyped                                                                                  ;
+; ONE_INPUT_IS_CONSTANT  ; YES      ; Untyped                                                                                  ;
+; CARRY_CHAIN            ; MANUAL   ; Untyped                                                                                  ;
+; CASCADE_CHAIN          ; MANUAL   ; Untyped                                                                                  ;
+; CARRY_CHAIN_LENGTH     ; 48       ; CARRY_CHAIN_LENGTH                                                                       ;
+; CASCADE_CHAIN_LENGTH   ; 2        ; CASCADE_CHAIN_LENGTH                                                                     ;
+; DEVICE_FAMILY          ; ACEX1K   ; Untyped                                                                                  ;
+; CBXI_PARAMETER         ; NOTHING  ; Untyped                                                                                  ;
+; AUTO_CARRY_CHAINS      ; ON       ; AUTO_CARRY                                                                               ;
+; IGNORE_CARRY_BUFFERS   ; OFF      ; IGNORE_CARRY                                                                             ;
+; AUTO_CASCADE_CHAINS    ; ON       ; AUTO_CASCADE                                                                             ;
+; IGNORE_CASCADE_BUFFERS ; OFF      ; IGNORE_CASCADE                                                                           ;
++------------------------+----------+------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Sep 24 00:38:12 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off problema3_industria -c problema3_industria
+Info: Found 1 design units, including 1 entities, in source file problema3_industria.bdf
+    Info: Found entity 1: problema3_industria
+Info: Found 1 design units, including 1 entities, in source file problema3_industria_sopragarantir.bdf
+    Info: Found entity 1: problema3_industria_sopragarantir
+Info: Found 1 design units, including 1 entities, in source file BLOCO_MAQ_PRINCIPAL.bdf
+    Info: Found entity 1: BLOCO_MAQ_PRINCIPAL
+Info: Found 1 design units, including 1 entities, in source file somador_completo.bdf
+    Info: Found entity 1: somador_completo
+Info: Found 1 design units, including 1 entities, in source file somadorSubtrator_rolhas.bdf
+    Info: Found entity 1: somadorSubtrator_rolhas
+Info: Found 1 design units, including 1 entities, in source file seletor.bdf
+    Info: Found entity 1: seletor
+Info: Found 1 design units, including 1 entities, in source file contador_de_rolhas.bdf
+    Info: Found entity 1: contador_de_rolhas
+Info: Found 1 design units, including 1 entities, in source file divisor_frequencia.bdf
+    Info: Found entity 1: divisor_frequencia
+Info: Found 1 design units, including 1 entities, in source file contador_2bits.bdf
+    Info: Found entity 1: contador_2bits
+Info: Found 1 design units, including 1 entities, in source file demux_digito.bdf
+    Info: Found entity 1: demux_digito
+Info: Found 1 design units, including 1 entities, in source file teste_exemplo.bdf
+    Info: Found entity 1: teste_exemplo
+Info: Found 1 design units, including 1 entities, in source file exibir_display.bdf
+    Info: Found entity 1: exibir_display
+Info: Elaborating entity "problema3_industria" for the top level hierarchy
+Info: Elaborating entity "BLOCO_MAQ_PRINCIPAL" for hierarchy "BLOCO_MAQ_PRINCIPAL:inst3"
+Warning: Block or symbol "AND4" of instance "ST_EB_Q1not_Q0" overlaps another block or symbol
+Warning: Block or symbol "NOT" of instance "PGnot" overlaps another block or symbol
+Info: Elaborating entity "exibir_display" for hierarchy "exibir_display:inst1"
+Info: Elaborating entity "demux_digito" for hierarchy "exibir_display:inst1|demux_digito:inst9"
+Info: Elaborating entity "contador_2bits" for hierarchy "exibir_display:inst1|contador_2bits:inst8"
+Info: Elaborating entity "divisor_frequencia" for hierarchy "exibir_display:inst1|divisor_frequencia:inst4"
+Info: Elaborating entity "7447" for hierarchy "exibir_display:inst1|7447:inst12"
+Info: Elaborated megafunction instantiation "exibir_display:inst1|7447:inst12"
+Warning: Using design file lpm_mux1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_mux1
+Info: Elaborating entity "lpm_mux1" for hierarchy "exibir_display:inst1|lpm_mux1:inst11"
+Info: Elaborating entity "lpm_mux" for hierarchy "exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component"
+Info: Elaborated megafunction instantiation "exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component"
+Info: Instantiated megafunction "exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_MUX"
+    Info: Parameter "LPM_WIDTH" = "4"
+    Info: Parameter "LPM_SIZE" = "2"
+    Info: Parameter "LPM_WIDTHS" = "1"
+Info: Elaborating entity "altshift" for hierarchy "exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|altshift:external_latency_ffs"
+Info: Elaborated megafunction instantiation "exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|altshift:external_latency_ffs", which is child of megafunction instantiation "exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component"
+Info: Elaborating entity "muxlut" for hierarchy "exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00009"
+Info: Elaborated megafunction instantiation "exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00009", which is child of megafunction instantiation "exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component"
+Info: Elaborating entity "74185" for hierarchy "exibir_display:inst1|74185:inst56"
+Info: Elaborated megafunction instantiation "exibir_display:inst1|74185:inst56"
+Info: Elaborating entity "74273" for hierarchy "exibir_display:inst1|74273:inst46"
+Info: Elaborated megafunction instantiation "exibir_display:inst1|74273:inst46"
+Info: Elaborating entity "contador_de_rolhas" for hierarchy "contador_de_rolhas:inst51"
+Info: Elaborating entity "somadorSubtrator_rolhas" for hierarchy "contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42"
+Info: Elaborating entity "somador_completo" for hierarchy "contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst33"
+Warning: Using design file lpm_mux0.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_mux0
+Info: Elaborating entity "lpm_mux0" for hierarchy "contador_de_rolhas:inst51|lpm_mux0:Multi_4"
+Info: Elaborating entity "lpm_mux" for hierarchy "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component"
+Info: Instantiated megafunction "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_MUX"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_SIZE" = "4"
+    Info: Parameter "LPM_WIDTHS" = "2"
+Info: Elaborating entity "altshift" for hierarchy "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|altshift:external_latency_ffs"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|altshift:external_latency_ffs", which is child of megafunction instantiation "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component"
+Info: Elaborating entity "muxlut" for hierarchy "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00009"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00009", which is child of megafunction instantiation "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component"
+Warning: Using design file lpm_constant0.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_constant0
+Info: Elaborating entity "lpm_constant0" for hierarchy "contador_de_rolhas:inst51|lpm_constant0:inst"
+Info: Elaborating entity "lpm_constant" for hierarchy "contador_de_rolhas:inst51|lpm_constant0:inst|lpm_constant:lpm_constant_component"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_constant0:inst|lpm_constant:lpm_constant_component"
+Info: Instantiated megafunction "contador_de_rolhas:inst51|lpm_constant0:inst|lpm_constant:lpm_constant_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_CONSTANT"
+    Info: Parameter "LPM_HINT" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_CVALUE" = "255"
+Warning: Using design file lpm_constant1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_constant1
+Info: Elaborating entity "lpm_constant1" for hierarchy "contador_de_rolhas:inst51|lpm_constant1:inst26"
+Info: Elaborating entity "lpm_constant" for hierarchy "contador_de_rolhas:inst51|lpm_constant1:inst26|lpm_constant:lpm_constant_component"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_constant1:inst26|lpm_constant:lpm_constant_component"
+Info: Instantiated megafunction "contador_de_rolhas:inst51|lpm_constant1:inst26|lpm_constant:lpm_constant_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_CONSTANT"
+    Info: Parameter "LPM_HINT" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_CVALUE" = "20"
+Warning: Using design file lpm_constant2.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_constant2
+Info: Elaborating entity "lpm_constant2" for hierarchy "contador_de_rolhas:inst51|lpm_constant2:inst27"
+Info: Elaborating entity "lpm_constant" for hierarchy "contador_de_rolhas:inst51|lpm_constant2:inst27|lpm_constant:lpm_constant_component"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_constant2:inst27|lpm_constant:lpm_constant_component"
+Info: Instantiated megafunction "contador_de_rolhas:inst51|lpm_constant2:inst27|lpm_constant:lpm_constant_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_CONSTANT"
+    Info: Parameter "LPM_HINT" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_CVALUE" = "10"
+Warning: Using design file lpm_constant3.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_constant3
+Info: Elaborating entity "lpm_constant3" for hierarchy "contador_de_rolhas:inst51|lpm_constant3:inst28"
+Info: Elaborating entity "lpm_constant" for hierarchy "contador_de_rolhas:inst51|lpm_constant3:inst28|lpm_constant:lpm_constant_component"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_constant3:inst28|lpm_constant:lpm_constant_component"
+Info: Instantiated megafunction "contador_de_rolhas:inst51|lpm_constant3:inst28|lpm_constant:lpm_constant_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_CONSTANT"
+    Info: Parameter "LPM_HINT" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_CVALUE" = "0"
+Info: Elaborating entity "seletor" for hierarchy "contador_de_rolhas:inst51|seletor:inst44"
+Warning: Using design file lpm_compare0.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_compare0
+Info: Elaborating entity "lpm_compare0" for hierarchy "contador_de_rolhas:inst51|lpm_compare0:inst29"
+Info: Elaborating entity "lpm_compare" for hierarchy "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component"
+Info: Instantiated megafunction "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_COMPARE"
+    Info: Parameter "LPM_HINT" = "ONE_INPUT_IS_CONSTANT=YES"
+    Info: Parameter "LPM_WIDTH" = "8"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+Info: Elaborating entity "comptree" for hierarchy "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator", which is child of megafunction instantiation "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component"
+Info: Elaborating entity "cmpchain" for hierarchy "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator|cmpchain:cmp_end"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator|cmpchain:cmp_end", which is child of megafunction instantiation "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component"
+Info: Elaborating entity "altshift" for hierarchy "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|altshift:aeb_ext_lat_ffs"
+Info: Elaborated megafunction instantiation "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|altshift:aeb_ext_lat_ffs", which is child of megafunction instantiation "contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component"
+Warning: Primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00015|result_node~synth" of type COMB (AND) cannot feed CASCADE primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00015|$00012" because the primitive already contains fan-out to one or more CASCADE primitives
+Warning: Primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00015|result_node~synth" of type COMB (AND) cannot feed CASCADE primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00019|$00012" because the primitive already contains fan-out to one or more CASCADE primitives
+Warning: Primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00015|result_node~synth" of type COMB (AND) cannot feed CASCADE primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00009|$00012" because the primitive already contains fan-out to one or more CASCADE primitives
+Warning: Primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00015|result_node~synth" of type COMB (AND) cannot feed CASCADE primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00021|$00012" because the primitive already contains fan-out to one or more CASCADE primitives
+Warning: Primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00015|result_node~synth" of type COMB (AND) cannot feed CASCADE primitive "contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00023|$00012" because the primitive already contains fan-out to one or more CASCADE primitives
+Info: Converted 3 single input CARRY primitives to CARRY_SUM primitives
+Info: Implemented 134 device resources after synthesis - the final resource count might be different
+    Info: Implemented 7 input pins
+    Info: Implemented 13 output pins
+    Info: Implemented 114 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 256 megabytes
+    Info: Processing ended: Tue Sep 24 00:38:25 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:08
+
+

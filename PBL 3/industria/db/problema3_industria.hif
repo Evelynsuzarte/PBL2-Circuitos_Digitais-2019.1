@@ -1,0 +1,2021 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+2
+51
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+74185
+# storage
+db|problema3_industria.(1).cnf
+db|problema3_industria.(1).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|others|maxplus2|74185.bdf
+4ce9bced35b34649460f16ed5d7a51b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+exibir_display:inst1|74185:inst56
+exibir_display:inst1|74185:inst
+exibir_display:inst1|74185:inst55
+}
+# macro_sequence
+
+# end
+# entity
+74273
+# storage
+db|problema3_industria.(2).cnf
+db|problema3_industria.(2).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|others|maxplus2|74273.bdf
+43247217913d17ab51bbea92feb3e38
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+exibir_display:inst1|74273:inst46
+contador_de_rolhas:inst51|74273:inst46
+}
+# macro_sequence
+
+# end
+# entity
+teste_exemplo
+# storage
+db|problema3_industria.(0).cnf
+db|problema3_industria.(0).cnf
+# case_insensitive
+# source_file
+teste_exemplo.bdf
+c9dc47a15a422ec9e09c3b3ad5c24f70
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+BLOCO_MAQ_PRINCIPAL
+# storage
+db|problema3_industria.(4).cnf
+db|problema3_industria.(4).cnf
+# case_insensitive
+# source_file
+BLOCO_MAQ_PRINCIPAL.bdf
+401dc3ca7137d0876855ed66621109e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+BLOCO_MAQ_PRINCIPAL:inst3
+}
+# macro_sequence
+
+# end
+# entity
+exibir_display
+# storage
+db|problema3_industria.(5).cnf
+db|problema3_industria.(5).cnf
+# case_insensitive
+# source_file
+exibir_display.bdf
+1fa16451898e828e549287991f1cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+exibir_display:inst1
+}
+# macro_sequence
+
+# end
+# entity
+demux_digito
+# storage
+db|problema3_industria.(6).cnf
+db|problema3_industria.(6).cnf
+# case_insensitive
+# source_file
+demux_digito.bdf
+83b9659e98fe2320e5b6eee97352d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+exibir_display:inst1|demux_digito:inst9
+}
+# macro_sequence
+
+# end
+# entity
+contador_2bits
+# storage
+db|problema3_industria.(7).cnf
+db|problema3_industria.(7).cnf
+# case_insensitive
+# source_file
+contador_2bits.bdf
+8c3b83945e6667e496d6f37ce48d6eeb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+exibir_display:inst1|contador_2bits:inst8
+}
+# macro_sequence
+
+# end
+# entity
+divisor_frequencia
+# storage
+db|problema3_industria.(8).cnf
+db|problema3_industria.(8).cnf
+# case_insensitive
+# source_file
+divisor_frequencia.bdf
+555b9ace3983c12c6ac5e5f56418543d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+exibir_display:inst1|divisor_frequencia:inst4
+}
+# macro_sequence
+
+# end
+# entity
+7447
+# storage
+db|problema3_industria.(9).cnf
+db|problema3_industria.(9).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|others|maxplus2|7447.bdf
+b866247e9e4e23608138281b57c7e83
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+exibir_display:inst1|7447:inst12
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mux1
+# storage
+db|problema3_industria.(10).cnf
+db|problema3_industria.(10).cnf
+# case_insensitive
+# source_file
+lpm_mux1.tdf
+70b730bb13298b7e1a6a8f57fdc2ec3
+7
+# used_port {
+sel
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data1x3
+-1
+3
+data1x2
+-1
+3
+data1x1
+-1
+3
+data1x0
+-1
+3
+data0x3
+-1
+3
+data0x2
+-1
+3
+data0x1
+-1
+3
+data0x0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_mux.inc
+c22bfd353214c01495b560fc34e47d79
+}
+# hierarchies {
+exibir_display:inst1|lpm_mux1:inst11
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mux
+# storage
+db|problema3_industria.(11).cnf
+db|problema3_industria.(11).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_mux.tdf
+7a4b3384f258c5ff904f89fe97f91077
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+2
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+mux_m9c
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sel0
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data1_3
+-1
+3
+data1_2
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_3
+-1
+3
+data0_2
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+e:|altera quartus 9.0|quartus|libraries|megafunctions|muxlut.inc
+f172666ca13e5e31e17e3f6cb35af52
+e:|altera quartus 9.0|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+e:|altera quartus 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|problema3_industria.(12).cnf
+db|problema3_industria.(12).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|altshift.tdf
+b979c99547bac7dc31574fe678a95a9
+7
+# user_parameter {
+WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|altshift:external_latency_ffs
+}
+# macro_sequence
+
+# end
+# entity
+muxlut
+# storage
+db|problema3_industria.(13).cnf
+db|problema3_industria.(13).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|muxlut.tdf
+358a66c66e87fe7f13fd57e72a83725
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+SIZE
+2
+PARAMETER_UNKNOWN
+USR
+LEVEL
+0
+PARAMETER_UNKNOWN
+USR
+TOT_LEVELS
+1
+PARAMETER_UNKNOWN
+USR
+LATENCY
+0
+PARAMETER_UNKNOWN
+USR
+REM_LATENCY
+0
+PARAMETER_UNKNOWN
+DEF
+LOCAL
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+select0
+-1
+3
+result
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+e:|altera quartus 9.0|quartus|libraries|megafunctions|muxlut.inc
+f172666ca13e5e31e17e3f6cb35af52
+e:|altera quartus 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00009
+exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00011
+exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00013
+exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00015
+}
+# macro_sequence
+
+# end
+# entity
+contador_de_rolhas
+# storage
+db|problema3_industria.(14).cnf
+db|problema3_industria.(14).cnf
+# case_insensitive
+# source_file
+contador_de_rolhas.bdf
+a293c49e292fb3bd1f9d509d3c66c516
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+contador_de_rolhas:inst51
+}
+# macro_sequence
+
+# end
+# entity
+somadorSubtrator_rolhas
+# storage
+db|problema3_industria.(15).cnf
+db|problema3_industria.(15).cnf
+# case_insensitive
+# source_file
+somadorSubtrator_rolhas.bdf
+c3cde2bbcc98f86dde3c866c83d25dc3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42
+}
+# macro_sequence
+
+# end
+# entity
+somador_completo
+# storage
+db|problema3_industria.(16).cnf
+db|problema3_industria.(16).cnf
+# case_insensitive
+# source_file
+somador_completo.bdf
+209d8ee999cda55876b9f34d650b466
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst33
+contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst34
+contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst35
+contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst36
+contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst37
+contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst38
+contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst39
+contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst40
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mux0
+# storage
+db|problema3_industria.(17).cnf
+db|problema3_industria.(17).cnf
+# case_insensitive
+# source_file
+lpm_mux0.tdf
+b6cf86ea832cc270b3897545c4149158
+7
+# used_port {
+sel1
+-1
+3
+sel0
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data3x7
+-1
+3
+data3x6
+-1
+3
+data3x5
+-1
+3
+data3x4
+-1
+3
+data3x3
+-1
+3
+data3x2
+-1
+3
+data3x1
+-1
+3
+data3x0
+-1
+3
+data2x7
+-1
+3
+data2x6
+-1
+3
+data2x5
+-1
+3
+data2x4
+-1
+3
+data2x3
+-1
+3
+data2x2
+-1
+3
+data2x1
+-1
+3
+data2x0
+-1
+3
+data1x7
+-1
+3
+data1x6
+-1
+3
+data1x5
+-1
+3
+data1x4
+-1
+3
+data1x3
+-1
+3
+data1x2
+-1
+3
+data1x1
+-1
+3
+data1x0
+-1
+3
+data0x7
+-1
+3
+data0x6
+-1
+3
+data0x5
+-1
+3
+data0x4
+-1
+3
+data0x3
+-1
+3
+data0x2
+-1
+3
+data0x1
+-1
+3
+data0x0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_mux.inc
+c22bfd353214c01495b560fc34e47d79
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_mux0:Multi_4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mux
+# storage
+db|problema3_industria.(18).cnf
+db|problema3_industria.(18).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_mux.tdf
+7a4b3384f258c5ff904f89fe97f91077
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_SIZE
+4
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHS
+2
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+mux_t9c
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sel1
+-1
+3
+sel0
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data3_7
+-1
+3
+data3_6
+-1
+3
+data3_5
+-1
+3
+data3_4
+-1
+3
+data3_3
+-1
+3
+data3_2
+-1
+3
+data3_1
+-1
+3
+data3_0
+-1
+3
+data2_7
+-1
+3
+data2_6
+-1
+3
+data2_5
+-1
+3
+data2_4
+-1
+3
+data2_3
+-1
+3
+data2_2
+-1
+3
+data2_1
+-1
+3
+data2_0
+-1
+3
+data1_7
+-1
+3
+data1_6
+-1
+3
+data1_5
+-1
+3
+data1_4
+-1
+3
+data1_3
+-1
+3
+data1_2
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_7
+-1
+3
+data0_6
+-1
+3
+data0_5
+-1
+3
+data0_4
+-1
+3
+data0_3
+-1
+3
+data0_2
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+e:|altera quartus 9.0|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+e:|altera quartus 9.0|quartus|libraries|megafunctions|muxlut.inc
+f172666ca13e5e31e17e3f6cb35af52
+e:|altera quartus 9.0|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|problema3_industria.(19).cnf
+db|problema3_industria.(19).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|altshift.tdf
+b979c99547bac7dc31574fe678a95a9
+7
+# user_parameter {
+WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|altshift:external_latency_ffs
+}
+# macro_sequence
+
+# end
+# entity
+muxlut
+# storage
+db|problema3_industria.(20).cnf
+db|problema3_industria.(20).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|muxlut.tdf
+358a66c66e87fe7f13fd57e72a83725
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+SIZE
+4
+PARAMETER_UNKNOWN
+USR
+LEVEL
+0
+PARAMETER_UNKNOWN
+USR
+TOT_LEVELS
+1
+PARAMETER_UNKNOWN
+USR
+LATENCY
+0
+PARAMETER_UNKNOWN
+USR
+REM_LATENCY
+0
+PARAMETER_UNKNOWN
+DEF
+LOCAL
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+select1
+-1
+3
+select0
+-1
+3
+result
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+e:|altera quartus 9.0|quartus|libraries|megafunctions|muxlut.inc
+f172666ca13e5e31e17e3f6cb35af52
+e:|altera quartus 9.0|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00009
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00011
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00013
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00015
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00017
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00019
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00021
+contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00023
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant0
+# storage
+db|problema3_industria.(21).cnf
+db|problema3_industria.(21).cnf
+# case_insensitive
+# source_file
+lpm_constant0.tdf
+14b3aabc43f6d949caa63f937131e
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_constant0:inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant
+# storage
+db|problema3_industria.(22).cnf
+db|problema3_industria.(22).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_constant.tdf
+a4c1888f3ad76eefbd4c233917888d8
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_CVALUE
+255
+PARAMETER_UNKNOWN
+USR
+ENABLE_RUNTIME_MOD
+NO
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_constant_6j6
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_constant0:inst|lpm_constant:lpm_constant_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant1
+# storage
+db|problema3_industria.(23).cnf
+db|problema3_industria.(23).cnf
+# case_insensitive
+# source_file
+lpm_constant1.tdf
+7d3873fa8febef33443e33a1fe03e4
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_constant1:inst26
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant
+# storage
+db|problema3_industria.(24).cnf
+db|problema3_industria.(24).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_constant.tdf
+a4c1888f3ad76eefbd4c233917888d8
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_CVALUE
+20
+PARAMETER_UNKNOWN
+USR
+ENABLE_RUNTIME_MOD
+NO
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_constant_vf6
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_constant1:inst26|lpm_constant:lpm_constant_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant2
+# storage
+db|problema3_industria.(25).cnf
+db|problema3_industria.(25).cnf
+# case_insensitive
+# source_file
+lpm_constant2.tdf
+948195432dc53c4d2f41f97661525028
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_constant2:inst27
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant
+# storage
+db|problema3_industria.(26).cnf
+db|problema3_industria.(26).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_constant.tdf
+a4c1888f3ad76eefbd4c233917888d8
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_CVALUE
+10
+PARAMETER_UNKNOWN
+USR
+ENABLE_RUNTIME_MOD
+NO
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_constant_bh6
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_constant2:inst27|lpm_constant:lpm_constant_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant3
+# storage
+db|problema3_industria.(27).cnf
+db|problema3_industria.(27).cnf
+# case_insensitive
+# source_file
+lpm_constant3.tdf
+d63c511c78462a52aa677b53dd2d69
+7
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_constant3:inst28
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant
+# storage
+db|problema3_industria.(28).cnf
+db|problema3_industria.(28).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_constant.tdf
+a4c1888f3ad76eefbd4c233917888d8
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+LPM_CVALUE
+0
+PARAMETER_UNKNOWN
+USR
+ENABLE_RUNTIME_MOD
+NO
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+lpm_constant_qf6
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_constant3:inst28|lpm_constant:lpm_constant_component
+}
+# macro_sequence
+
+# end
+# entity
+seletor
+# storage
+db|problema3_industria.(29).cnf
+db|problema3_industria.(29).cnf
+# case_insensitive
+# source_file
+seletor.bdf
+23f139886f7d42756189721235d13a4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+contador_de_rolhas:inst51|seletor:inst44
+}
+# macro_sequence
+
+# end
+# entity
+lpm_compare0
+# storage
+db|problema3_industria.(30).cnf
+db|problema3_industria.(30).cnf
+# case_insensitive
+# source_file
+lpm_compare0.tdf
+cd70188d7279f977b42e126c4bb5798
+7
+# used_port {
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aleb
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_compare0:inst29
+}
+# macro_sequence
+
+# end
+# entity
+lpm_compare
+# storage
+db|problema3_industria.(31).cnf
+db|problema3_industria.(31).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_compare.tdf
+357cebf019b326b43a8be894c2712
+7
+# user_parameter {
+lpm_width
+8
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CHAIN_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CASCADE_CHAIN_LENGTH
+2
+CASCADE_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+aleb
+-1
+3
+datab7
+-1
+1
+datab6
+-1
+1
+datab5
+-1
+1
+datab4
+-1
+1
+datab3
+-1
+1
+datab1
+-1
+1
+datab2
+-1
+2
+datab0
+-1
+2
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+e:|altera quartus 9.0|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+e:|altera quartus 9.0|quartus|libraries|megafunctions|comptree.inc
+da21447b8e66c26bd34c85b6cdda8169
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component
+}
+# macro_sequence
+
+# end
+# entity
+comptree
+# storage
+db|problema3_industria.(32).cnf
+db|problema3_industria.(32).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|comptree.tdf
+c10f65716cbcd9513c67a149d2b696e
+7
+# user_parameter {
+lpm_width
+8
+PARAMETER_UNKNOWN
+USR
+CHAIN_LENGTH
+48
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_CONSTANT
+1
+PARAMETER_UNKNOWN
+USR
+OUTPUTS_CLOCKED
+0
+PARAMETER_UNKNOWN
+USR
+BURRIED_CLOCKED
+1
+PARAMETER_UNKNOWN
+USR
+MODE
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+agb
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|cmpchain.inc
+168017bba687862323634772adbf6
+e:|altera quartus 9.0|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+e:|altera quartus 9.0|quartus|libraries|megafunctions|comptree.inc
+da21447b8e66c26bd34c85b6cdda8169
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator
+}
+# macro_sequence
+
+# end
+# entity
+cmpchain
+# storage
+db|problema3_industria.(33).cnf
+db|problema3_industria.(33).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|cmpchain.tdf
+30b6c709dbb68bf956be5cbea5c732
+7
+# user_parameter {
+lpm_width
+8
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_CONSTANT
+1
+PARAMETER_UNKNOWN
+USR
+MODE
+0
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+CASCADE_CHAIN_LENGTH
+2
+CASCADE_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+ACEX1K
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+agb
+-1
+3
+}
+# include_file {
+e:|altera quartus 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+e:|altera quartus 9.0|quartus|libraries|megafunctions|comptree.inc
+da21447b8e66c26bd34c85b6cdda8169
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator|cmpchain:cmp_end
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|problema3_industria.(34).cnf
+db|problema3_industria.(34).cnf
+# case_insensitive
+# source_file
+e:|altera quartus 9.0|quartus|libraries|megafunctions|altshift.tdf
+b979c99547bac7dc31574fe678a95a9
+7
+# user_parameter {
+WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|altshift:aeb_ext_lat_ffs
+contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|altshift:agb_ext_lat_ffs
+}
+# macro_sequence
+
+# end
+# entity
+problema3_industria
+# storage
+db|problema3_industria.(3).cnf
+db|problema3_industria.(3).cnf
+# case_insensitive
+# source_file
+problema3_industria.bdf
+98d2fad9639aea5336fbfe9842d15c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

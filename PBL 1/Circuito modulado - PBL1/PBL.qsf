@@ -1,0 +1,82 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+# Date created = 23:46:04  April 29, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		PBL_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY ACEX1K
+set_global_assignment -name DEVICE "EP1K100QC208-3"
+set_global_assignment -name TOP_LEVEL_ENTITY PBL_decodificador
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:46:04  APRIL 29, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name BDF_FILE PBL_decodificador.bdf
+set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD LVTTL/LVCMOS
+set_location_assignment PIN_70 -to coluna_a
+set_location_assignment PIN_65 -to coluna_b
+set_location_assignment PIN_45 -to coluna_c
+set_location_assignment PIN_56 -to coluna_d
+set_location_assignment PIN_54 -to coluna_e
+set_location_assignment PIN_39 -to linha_0
+set_location_assignment PIN_41 -to linha_1
+set_location_assignment PIN_68 -to linha_2
+set_location_assignment PIN_47 -to linha_3
+set_location_assignment PIN_63 -to linha_4
+set_location_assignment PIN_61 -to linha_5
+set_location_assignment PIN_58 -to linha_6
+set_location_assignment PIN_127 -to led_externa
+set_location_assignment PIN_161 -to led_externa_vermelha
+set_global_assignment -name MISC_FILE "/home/aluno/Área de trabalho/pblziiiiinho2/PBL.dpf"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_WAVEFORM_FILE "teste do pbl.vwf"
+set_global_assignment -name BDF_FILE PBL_decodificador6bits_colunas.bdf
+set_global_assignment -name BDF_FILE decodificador12bits_colunas.bdf
+set_global_assignment -name BDF_FILE decodificador6bits_colunas.bdf
+set_global_assignment -name BDF_FILE decodificador12bits_linhas.bdf
+set_global_assignment -name BDF_FILE decodificador6bits_linhas.bdf
+set_global_assignment -name BDF_FILE comparador.bdf
+set_global_assignment -name BDF_FILE leds_externas.bdf
+set_global_assignment -name MISC_FILE "C:/Users/Evelyn Suzarte/Desktop/pblziiiiinho2/PBL.dpf"
+set_location_assignment PIN_99 -to c1_jogador
+set_location_assignment PIN_101 -to c2_jogador
+set_location_assignment PIN_103 -to c3_jogador
+set_location_assignment PIN_111 -to l1_jogador
+set_location_assignment PIN_113 -to l2_jogador
+set_location_assignment PIN_115 -to l3_jogador
+set_global_assignment -name VECTOR_WAVEFORM_FILE Simulacao.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Simulacao.vwf

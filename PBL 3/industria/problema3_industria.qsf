@@ -1,0 +1,117 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+# Date created = 00:22:51  September 22, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		problema3_industria_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY ACEX1K
+set_global_assignment -name DEVICE "EP1K100QC208-3"
+set_global_assignment -name TOP_LEVEL_ENTITY problema3_industria
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:22:51  SEPTEMBER 22, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD LVTTL/LVCMOS
+set_location_assignment PIN_99 -to Start/Stop
+set_location_assignment PIN_101 -to PG
+set_location_assignment PIN_103 -to CH
+set_location_assignment PIN_111 -to RO
+set_location_assignment PIN_113 -to EB
+set_location_assignment PIN_127 -to Motor
+set_location_assignment PIN_131 -to Alarme
+set_location_assignment PIN_133 -to Enchimento
+set_location_assignment PIN_79 -to CLK
+set_global_assignment -name MISC_FILE "C:/Users/Evelyn Suzarte/Desktop/PBL 3/Problema 3- Maquina de estados/problema3_industria.dpf"
+set_global_assignment -name MISC_FILE "/home/aluno/Área de trabalho/Problema 3- Maquina de estados/problema3_industria.dpf"
+set_location_assignment PIN_135 -to Vedacao
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE teste_exemplo.vwf
+set_global_assignment -name BDF_FILE problema3_industria.bdf
+set_global_assignment -name BDF_FILE problema3_industria_sopragarantir.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_principal.vwf
+set_global_assignment -name BDF_FILE BLOCO_MAQ_PRINCIPAL.bdf
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name QIP_FILE lpm_constant0.qip
+set_global_assignment -name QIP_FILE lpm_constant1.qip
+set_global_assignment -name QIP_FILE lpm_constant2.qip
+set_global_assignment -name QIP_FILE lpm_constant3.qip
+set_global_assignment -name QIP_FILE lpm_compare0.qip
+set_global_assignment -name BDF_FILE somador_completo.bdf
+set_global_assignment -name BDF_FILE somadorSubtrator_rolhas.bdf
+set_global_assignment -name BDF_FILE seletor.bdf
+set_global_assignment -name BDF_FILE contador_de_rolhas.bdf
+set_global_assignment -name BDF_FILE divisor_frequencia.bdf
+set_global_assignment -name BDF_FILE contador_2bits.bdf
+set_global_assignment -name BDF_FILE demux_digito.bdf
+set_global_assignment -name QIP_FILE lpm_mux1.qip
+set_global_assignment -name BDF_FILE teste_exemplo.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE teste_exemplo.vwf
+set_global_assignment -name BSF_FILE "74273 - alterado.bsf"
+set_global_assignment -name BSF_FILE "74273 _alterado.bsf"
+set_global_assignment -name SOURCE_FILE ../problema3_industria.pdf
+set_global_assignment -name SOURCE_FILE problema3_industria.pdf
+set_global_assignment -name BDF_FILE exibir_display.bdf
+set_location_assignment PIN_41 -to digito1
+set_location_assignment PIN_70 -to digito2
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER A_display -section_id display
+set_global_assignment -name MISC_FILE "C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/problema3_industria.dpf"
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER B_display -section_id display
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER C_display -section_id display
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER D_display -section_id display
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER E_display -section_id display
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER F_display -section_id display
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER G_display -section_id display
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER Start/Stop -section_id entradas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER CH -section_id entradas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER EB -section_id entradas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER PG -section_id entradas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER RO -section_id entradas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER Motor -section_id saidas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER Alarme -section_id saidas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER Enchimento -section_id saidas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER Vedacao -section_id saidas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER OP -section_id entradas
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER digito1 -section_id digitos
+set_global_assignment -name ASSIGNMENT_GROUP_MEMBER digito2 -section_id digitos
+set_location_assignment PIN_68 -to A_display
+set_location_assignment PIN_39 -to B_display
+set_location_assignment PIN_56 -to C_display
+set_location_assignment PIN_61 -to D_display
+set_location_assignment PIN_63 -to E_display
+set_location_assignment PIN_65 -to F_display
+set_location_assignment PIN_54 -to G_display
+set_location_assignment PIN_87 -to OP

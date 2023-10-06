@@ -1,0 +1,29 @@
+|PBL_decodificador
+coluna_a <= inst75.DB_MAX_OUTPUT_PORT_TYPE
+A_comparador => inst1.IN1
+A_comparador => inst57.IN0
+B_comparador => inst6.IN1
+B_comparador => inst61.IN0
+C_comparador => inst8.IN1
+C_comparador => inst64.IN0
+D_comparador => inst12.IN1
+D_comparador => inst67.IN0
+E_comparador => inst43.IN1
+E_comparador => inst70.IN0
+F_comparador => inst45.IN1
+F_comparador => inst73.IN0
+coluna_b <= inst76.DB_MAX_OUTPUT_PORT_TYPE
+coluna_c <= inst77.DB_MAX_OUTPUT_PORT_TYPE
+coluna_d <= inst78.DB_MAX_OUTPUT_PORT_TYPE
+coluna_e <= inst79.DB_MAX_OUTPUT_PORT_TYPE
+linha_0 <= inst104.DB_MAX_OUTPUT_PORT_TYPE
+linha_1 <= inst105.DB_MAX_OUTPUT_PORT_TYPE
+linha_2 <= inst106.DB_MAX_OUTPUT_PORT_TYPE
+linha_3 <= inst107.DB_MAX_OUTPUT_PORT_TYPE
+linha_4 <= inst108.DB_MAX_OUTPUT_PORT_TYPE
+linha_5 <= inst109.DB_MAX_OUTPUT_PORT_TYPE
+linha_6 <= inst110.DB_MAX_OUTPUT_PORT_TYPE
+led_externa <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+led_externa_vermelha <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+
+

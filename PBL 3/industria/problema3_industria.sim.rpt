@@ -1,0 +1,396 @@
+Simulator report for problema3_industria
+Mon Sep 23 23:58:20 2019
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 119 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 2            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; ACEX1K       ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Option                                                                                     ; Setting           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Simulation mode                                                                            ; Functional        ; Timing        ;
+; Start time                                                                                 ; 0 ns              ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF              ;               ;
+; Vector input source                                                                        ; teste_exemplo.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                ; On            ;
+; Check outputs                                                                              ; Off               ; Off           ;
+; Report simulation coverage                                                                 ; On                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                ; On            ;
+; Detect setup and hold time violations                                                      ; Off               ; Off           ;
+; Detect glitches                                                                            ; Off               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off               ; Off           ;
+; Generate Signal Activity File                                                              ; Off               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off               ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 119          ;
+; Total output ports checked                          ; 118          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 118          ;
+; Total output ports with no 1-value coverage         ; 118          ;
+; Total output ports with no 0-value coverage         ; 118          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |teste_exemplo|H               ; |teste_exemplo|H               ; pin_out          ;
+; |teste_exemplo|D1              ; |teste_exemplo|D1              ; out              ;
+; |teste_exemplo|G               ; |teste_exemplo|G               ; pin_out          ;
+; |teste_exemplo|D2              ; |teste_exemplo|D2              ; out              ;
+; |teste_exemplo|D3              ; |teste_exemplo|D3              ; out              ;
+; |teste_exemplo|D4              ; |teste_exemplo|D4              ; out              ;
+; |teste_exemplo|D5              ; |teste_exemplo|D5              ; out              ;
+; |teste_exemplo|D7              ; |teste_exemplo|D7              ; out              ;
+; |teste_exemplo|D6              ; |teste_exemplo|D6              ; out              ;
+; |teste_exemplo|D8              ; |teste_exemplo|D8              ; out              ;
+; |teste_exemplo|F               ; |teste_exemplo|F               ; pin_out          ;
+; |teste_exemplo|E               ; |teste_exemplo|E               ; pin_out          ;
+; |teste_exemplo|D               ; |teste_exemplo|D               ; pin_out          ;
+; |teste_exemplo|C               ; |teste_exemplo|C               ; pin_out          ;
+; |teste_exemplo|B               ; |teste_exemplo|B               ; pin_out          ;
+; |teste_exemplo|A               ; |teste_exemplo|A               ; pin_out          ;
+; |teste_exemplo|74185:inst56|41 ; |teste_exemplo|74185:inst56|41 ; out0             ;
+; |teste_exemplo|74185:inst56|29 ; |teste_exemplo|74185:inst56|29 ; out0             ;
+; |teste_exemplo|74185:inst56|32 ; |teste_exemplo|74185:inst56|32 ; out0             ;
+; |teste_exemplo|74185:inst56|35 ; |teste_exemplo|74185:inst56|35 ; out0             ;
+; |teste_exemplo|74185:inst56|36 ; |teste_exemplo|74185:inst56|36 ; out0             ;
+; |teste_exemplo|74185:inst56|37 ; |teste_exemplo|74185:inst56|37 ; out0             ;
+; |teste_exemplo|74185:inst56|43 ; |teste_exemplo|74185:inst56|43 ; out0             ;
+; |teste_exemplo|74185:inst56|20 ; |teste_exemplo|74185:inst56|20 ; out0             ;
+; |teste_exemplo|74185:inst56|21 ; |teste_exemplo|74185:inst56|21 ; out0             ;
+; |teste_exemplo|74185:inst56|22 ; |teste_exemplo|74185:inst56|22 ; out0             ;
+; |teste_exemplo|74185:inst56|24 ; |teste_exemplo|74185:inst56|24 ; out0             ;
+; |teste_exemplo|74185:inst56|25 ; |teste_exemplo|74185:inst56|25 ; out0             ;
+; |teste_exemplo|74185:inst56|45 ; |teste_exemplo|74185:inst56|45 ; out0             ;
+; |teste_exemplo|74185:inst56|17 ; |teste_exemplo|74185:inst56|17 ; out0             ;
+; |teste_exemplo|74185:inst56|15 ; |teste_exemplo|74185:inst56|15 ; out0             ;
+; |teste_exemplo|74185:inst56|14 ; |teste_exemplo|74185:inst56|14 ; out0             ;
+; |teste_exemplo|74185:inst55|41 ; |teste_exemplo|74185:inst55|41 ; out0             ;
+; |teste_exemplo|74185:inst55|30 ; |teste_exemplo|74185:inst55|30 ; out0             ;
+; |teste_exemplo|74185:inst55|29 ; |teste_exemplo|74185:inst55|29 ; out0             ;
+; |teste_exemplo|74185:inst55|31 ; |teste_exemplo|74185:inst55|31 ; out0             ;
+; |teste_exemplo|74185:inst55|32 ; |teste_exemplo|74185:inst55|32 ; out0             ;
+; |teste_exemplo|74185:inst55|33 ; |teste_exemplo|74185:inst55|33 ; out0             ;
+; |teste_exemplo|74185:inst55|34 ; |teste_exemplo|74185:inst55|34 ; out0             ;
+; |teste_exemplo|74185:inst55|35 ; |teste_exemplo|74185:inst55|35 ; out0             ;
+; |teste_exemplo|74185:inst55|36 ; |teste_exemplo|74185:inst55|36 ; out0             ;
+; |teste_exemplo|74185:inst55|37 ; |teste_exemplo|74185:inst55|37 ; out0             ;
+; |teste_exemplo|74185:inst55|38 ; |teste_exemplo|74185:inst55|38 ; out0             ;
+; |teste_exemplo|74185:inst55|43 ; |teste_exemplo|74185:inst55|43 ; out0             ;
+; |teste_exemplo|74185:inst55|20 ; |teste_exemplo|74185:inst55|20 ; out0             ;
+; |teste_exemplo|74185:inst55|21 ; |teste_exemplo|74185:inst55|21 ; out0             ;
+; |teste_exemplo|74185:inst55|22 ; |teste_exemplo|74185:inst55|22 ; out0             ;
+; |teste_exemplo|74185:inst55|23 ; |teste_exemplo|74185:inst55|23 ; out0             ;
+; |teste_exemplo|74185:inst55|24 ; |teste_exemplo|74185:inst55|24 ; out0             ;
+; |teste_exemplo|74185:inst55|25 ; |teste_exemplo|74185:inst55|25 ; out0             ;
+; |teste_exemplo|74185:inst55|26 ; |teste_exemplo|74185:inst55|26 ; out0             ;
+; |teste_exemplo|74185:inst55|27 ; |teste_exemplo|74185:inst55|27 ; out0             ;
+; |teste_exemplo|74185:inst55|28 ; |teste_exemplo|74185:inst55|28 ; out0             ;
+; |teste_exemplo|74185:inst55|45 ; |teste_exemplo|74185:inst55|45 ; out0             ;
+; |teste_exemplo|74185:inst55|19 ; |teste_exemplo|74185:inst55|19 ; out0             ;
+; |teste_exemplo|74185:inst55|18 ; |teste_exemplo|74185:inst55|18 ; out0             ;
+; |teste_exemplo|74185:inst55|17 ; |teste_exemplo|74185:inst55|17 ; out0             ;
+; |teste_exemplo|74185:inst55|16 ; |teste_exemplo|74185:inst55|16 ; out0             ;
+; |teste_exemplo|74185:inst55|15 ; |teste_exemplo|74185:inst55|15 ; out0             ;
+; |teste_exemplo|74185:inst55|14 ; |teste_exemplo|74185:inst55|14 ; out0             ;
+; |teste_exemplo|74185:inst55|81 ; |teste_exemplo|74185:inst55|81 ; out0             ;
+; |teste_exemplo|74185:inst55|13 ; |teste_exemplo|74185:inst55|13 ; out0             ;
+; |teste_exemplo|74185:inst55|12 ; |teste_exemplo|74185:inst55|12 ; out0             ;
+; |teste_exemplo|74185:inst55|11 ; |teste_exemplo|74185:inst55|11 ; out0             ;
+; |teste_exemplo|74185:inst55|46 ; |teste_exemplo|74185:inst55|46 ; out0             ;
+; |teste_exemplo|74185:inst55|10 ; |teste_exemplo|74185:inst55|10 ; out0             ;
+; |teste_exemplo|74185:inst55|9  ; |teste_exemplo|74185:inst55|9  ; out0             ;
+; |teste_exemplo|74185:inst55|8  ; |teste_exemplo|74185:inst55|8  ; out0             ;
+; |teste_exemplo|74185:inst55|7  ; |teste_exemplo|74185:inst55|7  ; out0             ;
+; |teste_exemplo|74185:inst55|82 ; |teste_exemplo|74185:inst55|82 ; out0             ;
+; |teste_exemplo|74185:inst55|3  ; |teste_exemplo|74185:inst55|3  ; out0             ;
+; |teste_exemplo|74185:inst55|4  ; |teste_exemplo|74185:inst55|4  ; out0             ;
+; |teste_exemplo|74185:inst55|5  ; |teste_exemplo|74185:inst55|5  ; out0             ;
+; |teste_exemplo|74185:inst55|6  ; |teste_exemplo|74185:inst55|6  ; out0             ;
+; |teste_exemplo|74185:inst55|48 ; |teste_exemplo|74185:inst55|48 ; out0             ;
+; |teste_exemplo|74185:inst55|2  ; |teste_exemplo|74185:inst55|2  ; out0             ;
+; |teste_exemplo|74185:inst|41   ; |teste_exemplo|74185:inst|41   ; out0             ;
+; |teste_exemplo|74185:inst|30   ; |teste_exemplo|74185:inst|30   ; out0             ;
+; |teste_exemplo|74185:inst|29   ; |teste_exemplo|74185:inst|29   ; out0             ;
+; |teste_exemplo|74185:inst|31   ; |teste_exemplo|74185:inst|31   ; out0             ;
+; |teste_exemplo|74185:inst|32   ; |teste_exemplo|74185:inst|32   ; out0             ;
+; |teste_exemplo|74185:inst|33   ; |teste_exemplo|74185:inst|33   ; out0             ;
+; |teste_exemplo|74185:inst|34   ; |teste_exemplo|74185:inst|34   ; out0             ;
+; |teste_exemplo|74185:inst|35   ; |teste_exemplo|74185:inst|35   ; out0             ;
+; |teste_exemplo|74185:inst|36   ; |teste_exemplo|74185:inst|36   ; out0             ;
+; |teste_exemplo|74185:inst|37   ; |teste_exemplo|74185:inst|37   ; out0             ;
+; |teste_exemplo|74185:inst|38   ; |teste_exemplo|74185:inst|38   ; out0             ;
+; |teste_exemplo|74185:inst|43   ; |teste_exemplo|74185:inst|43   ; out0             ;
+; |teste_exemplo|74185:inst|20   ; |teste_exemplo|74185:inst|20   ; out0             ;
+; |teste_exemplo|74185:inst|21   ; |teste_exemplo|74185:inst|21   ; out0             ;
+; |teste_exemplo|74185:inst|22   ; |teste_exemplo|74185:inst|22   ; out0             ;
+; |teste_exemplo|74185:inst|23   ; |teste_exemplo|74185:inst|23   ; out0             ;
+; |teste_exemplo|74185:inst|24   ; |teste_exemplo|74185:inst|24   ; out0             ;
+; |teste_exemplo|74185:inst|25   ; |teste_exemplo|74185:inst|25   ; out0             ;
+; |teste_exemplo|74185:inst|26   ; |teste_exemplo|74185:inst|26   ; out0             ;
+; |teste_exemplo|74185:inst|27   ; |teste_exemplo|74185:inst|27   ; out0             ;
+; |teste_exemplo|74185:inst|28   ; |teste_exemplo|74185:inst|28   ; out0             ;
+; |teste_exemplo|74185:inst|45   ; |teste_exemplo|74185:inst|45   ; out0             ;
+; |teste_exemplo|74185:inst|19   ; |teste_exemplo|74185:inst|19   ; out0             ;
+; |teste_exemplo|74185:inst|18   ; |teste_exemplo|74185:inst|18   ; out0             ;
+; |teste_exemplo|74185:inst|17   ; |teste_exemplo|74185:inst|17   ; out0             ;
+; |teste_exemplo|74185:inst|16   ; |teste_exemplo|74185:inst|16   ; out0             ;
+; |teste_exemplo|74185:inst|15   ; |teste_exemplo|74185:inst|15   ; out0             ;
+; |teste_exemplo|74185:inst|14   ; |teste_exemplo|74185:inst|14   ; out0             ;
+; |teste_exemplo|74185:inst|81   ; |teste_exemplo|74185:inst|81   ; out0             ;
+; |teste_exemplo|74185:inst|13   ; |teste_exemplo|74185:inst|13   ; out0             ;
+; |teste_exemplo|74185:inst|12   ; |teste_exemplo|74185:inst|12   ; out0             ;
+; |teste_exemplo|74185:inst|11   ; |teste_exemplo|74185:inst|11   ; out0             ;
+; |teste_exemplo|74185:inst|46   ; |teste_exemplo|74185:inst|46   ; out0             ;
+; |teste_exemplo|74185:inst|10   ; |teste_exemplo|74185:inst|10   ; out0             ;
+; |teste_exemplo|74185:inst|9    ; |teste_exemplo|74185:inst|9    ; out0             ;
+; |teste_exemplo|74185:inst|8    ; |teste_exemplo|74185:inst|8    ; out0             ;
+; |teste_exemplo|74185:inst|7    ; |teste_exemplo|74185:inst|7    ; out0             ;
+; |teste_exemplo|74185:inst|82   ; |teste_exemplo|74185:inst|82   ; out0             ;
+; |teste_exemplo|74185:inst|3    ; |teste_exemplo|74185:inst|3    ; out0             ;
+; |teste_exemplo|74185:inst|4    ; |teste_exemplo|74185:inst|4    ; out0             ;
+; |teste_exemplo|74185:inst|5    ; |teste_exemplo|74185:inst|5    ; out0             ;
+; |teste_exemplo|74185:inst|6    ; |teste_exemplo|74185:inst|6    ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |teste_exemplo|H               ; |teste_exemplo|H               ; pin_out          ;
+; |teste_exemplo|D1              ; |teste_exemplo|D1              ; out              ;
+; |teste_exemplo|G               ; |teste_exemplo|G               ; pin_out          ;
+; |teste_exemplo|D2              ; |teste_exemplo|D2              ; out              ;
+; |teste_exemplo|D3              ; |teste_exemplo|D3              ; out              ;
+; |teste_exemplo|D4              ; |teste_exemplo|D4              ; out              ;
+; |teste_exemplo|D5              ; |teste_exemplo|D5              ; out              ;
+; |teste_exemplo|D7              ; |teste_exemplo|D7              ; out              ;
+; |teste_exemplo|D6              ; |teste_exemplo|D6              ; out              ;
+; |teste_exemplo|D8              ; |teste_exemplo|D8              ; out              ;
+; |teste_exemplo|F               ; |teste_exemplo|F               ; pin_out          ;
+; |teste_exemplo|E               ; |teste_exemplo|E               ; pin_out          ;
+; |teste_exemplo|D               ; |teste_exemplo|D               ; pin_out          ;
+; |teste_exemplo|C               ; |teste_exemplo|C               ; pin_out          ;
+; |teste_exemplo|B               ; |teste_exemplo|B               ; pin_out          ;
+; |teste_exemplo|A               ; |teste_exemplo|A               ; pin_out          ;
+; |teste_exemplo|74185:inst56|41 ; |teste_exemplo|74185:inst56|41 ; out0             ;
+; |teste_exemplo|74185:inst56|29 ; |teste_exemplo|74185:inst56|29 ; out0             ;
+; |teste_exemplo|74185:inst56|32 ; |teste_exemplo|74185:inst56|32 ; out0             ;
+; |teste_exemplo|74185:inst56|35 ; |teste_exemplo|74185:inst56|35 ; out0             ;
+; |teste_exemplo|74185:inst56|36 ; |teste_exemplo|74185:inst56|36 ; out0             ;
+; |teste_exemplo|74185:inst56|37 ; |teste_exemplo|74185:inst56|37 ; out0             ;
+; |teste_exemplo|74185:inst56|43 ; |teste_exemplo|74185:inst56|43 ; out0             ;
+; |teste_exemplo|74185:inst56|20 ; |teste_exemplo|74185:inst56|20 ; out0             ;
+; |teste_exemplo|74185:inst56|21 ; |teste_exemplo|74185:inst56|21 ; out0             ;
+; |teste_exemplo|74185:inst56|22 ; |teste_exemplo|74185:inst56|22 ; out0             ;
+; |teste_exemplo|74185:inst56|24 ; |teste_exemplo|74185:inst56|24 ; out0             ;
+; |teste_exemplo|74185:inst56|25 ; |teste_exemplo|74185:inst56|25 ; out0             ;
+; |teste_exemplo|74185:inst56|45 ; |teste_exemplo|74185:inst56|45 ; out0             ;
+; |teste_exemplo|74185:inst56|17 ; |teste_exemplo|74185:inst56|17 ; out0             ;
+; |teste_exemplo|74185:inst56|15 ; |teste_exemplo|74185:inst56|15 ; out0             ;
+; |teste_exemplo|74185:inst56|14 ; |teste_exemplo|74185:inst56|14 ; out0             ;
+; |teste_exemplo|74185:inst55|41 ; |teste_exemplo|74185:inst55|41 ; out0             ;
+; |teste_exemplo|74185:inst55|30 ; |teste_exemplo|74185:inst55|30 ; out0             ;
+; |teste_exemplo|74185:inst55|29 ; |teste_exemplo|74185:inst55|29 ; out0             ;
+; |teste_exemplo|74185:inst55|31 ; |teste_exemplo|74185:inst55|31 ; out0             ;
+; |teste_exemplo|74185:inst55|32 ; |teste_exemplo|74185:inst55|32 ; out0             ;
+; |teste_exemplo|74185:inst55|33 ; |teste_exemplo|74185:inst55|33 ; out0             ;
+; |teste_exemplo|74185:inst55|34 ; |teste_exemplo|74185:inst55|34 ; out0             ;
+; |teste_exemplo|74185:inst55|35 ; |teste_exemplo|74185:inst55|35 ; out0             ;
+; |teste_exemplo|74185:inst55|36 ; |teste_exemplo|74185:inst55|36 ; out0             ;
+; |teste_exemplo|74185:inst55|37 ; |teste_exemplo|74185:inst55|37 ; out0             ;
+; |teste_exemplo|74185:inst55|38 ; |teste_exemplo|74185:inst55|38 ; out0             ;
+; |teste_exemplo|74185:inst55|43 ; |teste_exemplo|74185:inst55|43 ; out0             ;
+; |teste_exemplo|74185:inst55|20 ; |teste_exemplo|74185:inst55|20 ; out0             ;
+; |teste_exemplo|74185:inst55|21 ; |teste_exemplo|74185:inst55|21 ; out0             ;
+; |teste_exemplo|74185:inst55|22 ; |teste_exemplo|74185:inst55|22 ; out0             ;
+; |teste_exemplo|74185:inst55|23 ; |teste_exemplo|74185:inst55|23 ; out0             ;
+; |teste_exemplo|74185:inst55|24 ; |teste_exemplo|74185:inst55|24 ; out0             ;
+; |teste_exemplo|74185:inst55|25 ; |teste_exemplo|74185:inst55|25 ; out0             ;
+; |teste_exemplo|74185:inst55|26 ; |teste_exemplo|74185:inst55|26 ; out0             ;
+; |teste_exemplo|74185:inst55|27 ; |teste_exemplo|74185:inst55|27 ; out0             ;
+; |teste_exemplo|74185:inst55|28 ; |teste_exemplo|74185:inst55|28 ; out0             ;
+; |teste_exemplo|74185:inst55|45 ; |teste_exemplo|74185:inst55|45 ; out0             ;
+; |teste_exemplo|74185:inst55|19 ; |teste_exemplo|74185:inst55|19 ; out0             ;
+; |teste_exemplo|74185:inst55|18 ; |teste_exemplo|74185:inst55|18 ; out0             ;
+; |teste_exemplo|74185:inst55|17 ; |teste_exemplo|74185:inst55|17 ; out0             ;
+; |teste_exemplo|74185:inst55|16 ; |teste_exemplo|74185:inst55|16 ; out0             ;
+; |teste_exemplo|74185:inst55|15 ; |teste_exemplo|74185:inst55|15 ; out0             ;
+; |teste_exemplo|74185:inst55|14 ; |teste_exemplo|74185:inst55|14 ; out0             ;
+; |teste_exemplo|74185:inst55|81 ; |teste_exemplo|74185:inst55|81 ; out0             ;
+; |teste_exemplo|74185:inst55|13 ; |teste_exemplo|74185:inst55|13 ; out0             ;
+; |teste_exemplo|74185:inst55|12 ; |teste_exemplo|74185:inst55|12 ; out0             ;
+; |teste_exemplo|74185:inst55|11 ; |teste_exemplo|74185:inst55|11 ; out0             ;
+; |teste_exemplo|74185:inst55|46 ; |teste_exemplo|74185:inst55|46 ; out0             ;
+; |teste_exemplo|74185:inst55|10 ; |teste_exemplo|74185:inst55|10 ; out0             ;
+; |teste_exemplo|74185:inst55|9  ; |teste_exemplo|74185:inst55|9  ; out0             ;
+; |teste_exemplo|74185:inst55|8  ; |teste_exemplo|74185:inst55|8  ; out0             ;
+; |teste_exemplo|74185:inst55|7  ; |teste_exemplo|74185:inst55|7  ; out0             ;
+; |teste_exemplo|74185:inst55|82 ; |teste_exemplo|74185:inst55|82 ; out0             ;
+; |teste_exemplo|74185:inst55|3  ; |teste_exemplo|74185:inst55|3  ; out0             ;
+; |teste_exemplo|74185:inst55|4  ; |teste_exemplo|74185:inst55|4  ; out0             ;
+; |teste_exemplo|74185:inst55|5  ; |teste_exemplo|74185:inst55|5  ; out0             ;
+; |teste_exemplo|74185:inst55|6  ; |teste_exemplo|74185:inst55|6  ; out0             ;
+; |teste_exemplo|74185:inst55|48 ; |teste_exemplo|74185:inst55|48 ; out0             ;
+; |teste_exemplo|74185:inst55|2  ; |teste_exemplo|74185:inst55|2  ; out0             ;
+; |teste_exemplo|74185:inst|41   ; |teste_exemplo|74185:inst|41   ; out0             ;
+; |teste_exemplo|74185:inst|30   ; |teste_exemplo|74185:inst|30   ; out0             ;
+; |teste_exemplo|74185:inst|29   ; |teste_exemplo|74185:inst|29   ; out0             ;
+; |teste_exemplo|74185:inst|31   ; |teste_exemplo|74185:inst|31   ; out0             ;
+; |teste_exemplo|74185:inst|32   ; |teste_exemplo|74185:inst|32   ; out0             ;
+; |teste_exemplo|74185:inst|33   ; |teste_exemplo|74185:inst|33   ; out0             ;
+; |teste_exemplo|74185:inst|34   ; |teste_exemplo|74185:inst|34   ; out0             ;
+; |teste_exemplo|74185:inst|35   ; |teste_exemplo|74185:inst|35   ; out0             ;
+; |teste_exemplo|74185:inst|36   ; |teste_exemplo|74185:inst|36   ; out0             ;
+; |teste_exemplo|74185:inst|37   ; |teste_exemplo|74185:inst|37   ; out0             ;
+; |teste_exemplo|74185:inst|38   ; |teste_exemplo|74185:inst|38   ; out0             ;
+; |teste_exemplo|74185:inst|43   ; |teste_exemplo|74185:inst|43   ; out0             ;
+; |teste_exemplo|74185:inst|20   ; |teste_exemplo|74185:inst|20   ; out0             ;
+; |teste_exemplo|74185:inst|21   ; |teste_exemplo|74185:inst|21   ; out0             ;
+; |teste_exemplo|74185:inst|22   ; |teste_exemplo|74185:inst|22   ; out0             ;
+; |teste_exemplo|74185:inst|23   ; |teste_exemplo|74185:inst|23   ; out0             ;
+; |teste_exemplo|74185:inst|24   ; |teste_exemplo|74185:inst|24   ; out0             ;
+; |teste_exemplo|74185:inst|25   ; |teste_exemplo|74185:inst|25   ; out0             ;
+; |teste_exemplo|74185:inst|26   ; |teste_exemplo|74185:inst|26   ; out0             ;
+; |teste_exemplo|74185:inst|27   ; |teste_exemplo|74185:inst|27   ; out0             ;
+; |teste_exemplo|74185:inst|28   ; |teste_exemplo|74185:inst|28   ; out0             ;
+; |teste_exemplo|74185:inst|45   ; |teste_exemplo|74185:inst|45   ; out0             ;
+; |teste_exemplo|74185:inst|19   ; |teste_exemplo|74185:inst|19   ; out0             ;
+; |teste_exemplo|74185:inst|18   ; |teste_exemplo|74185:inst|18   ; out0             ;
+; |teste_exemplo|74185:inst|17   ; |teste_exemplo|74185:inst|17   ; out0             ;
+; |teste_exemplo|74185:inst|16   ; |teste_exemplo|74185:inst|16   ; out0             ;
+; |teste_exemplo|74185:inst|15   ; |teste_exemplo|74185:inst|15   ; out0             ;
+; |teste_exemplo|74185:inst|14   ; |teste_exemplo|74185:inst|14   ; out0             ;
+; |teste_exemplo|74185:inst|81   ; |teste_exemplo|74185:inst|81   ; out0             ;
+; |teste_exemplo|74185:inst|13   ; |teste_exemplo|74185:inst|13   ; out0             ;
+; |teste_exemplo|74185:inst|12   ; |teste_exemplo|74185:inst|12   ; out0             ;
+; |teste_exemplo|74185:inst|11   ; |teste_exemplo|74185:inst|11   ; out0             ;
+; |teste_exemplo|74185:inst|46   ; |teste_exemplo|74185:inst|46   ; out0             ;
+; |teste_exemplo|74185:inst|10   ; |teste_exemplo|74185:inst|10   ; out0             ;
+; |teste_exemplo|74185:inst|9    ; |teste_exemplo|74185:inst|9    ; out0             ;
+; |teste_exemplo|74185:inst|8    ; |teste_exemplo|74185:inst|8    ; out0             ;
+; |teste_exemplo|74185:inst|7    ; |teste_exemplo|74185:inst|7    ; out0             ;
+; |teste_exemplo|74185:inst|82   ; |teste_exemplo|74185:inst|82   ; out0             ;
+; |teste_exemplo|74185:inst|3    ; |teste_exemplo|74185:inst|3    ; out0             ;
+; |teste_exemplo|74185:inst|4    ; |teste_exemplo|74185:inst|4    ; out0             ;
+; |teste_exemplo|74185:inst|5    ; |teste_exemplo|74185:inst|5    ; out0             ;
+; |teste_exemplo|74185:inst|6    ; |teste_exemplo|74185:inst|6    ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Sep 23 23:58:19 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off problema3_industria -c problema3_industria
+Info: Using vector source file "C:/Users/Evelyn Suzarte/Desktop/Problema 3- Maquina de estados ATUALIZADO/teste_exemplo.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 2
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 176 megabytes
+    Info: Processing ended: Mon Sep 23 23:58:20 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

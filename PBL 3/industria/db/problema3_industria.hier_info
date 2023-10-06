@@ -1,0 +1,1188 @@
+|problema3_industria
+Motor <= BLOCO_MAQ_PRINCIPAL:inst3.Motor
+Start/Stop => BLOCO_MAQ_PRINCIPAL:inst3.Start/Stop
+PG => BLOCO_MAQ_PRINCIPAL:inst3.PG
+CH => BLOCO_MAQ_PRINCIPAL:inst3.CH
+RO => BLOCO_MAQ_PRINCIPAL:inst3.RO
+EB => BLOCO_MAQ_PRINCIPAL:inst3.EB
+CLK => BLOCO_MAQ_PRINCIPAL:inst3.CLK
+CLK => contador_de_rolhas:inst51.OP
+CLK => exibir_display:inst1.CLK
+CLK => exibir_display:inst1.CLK_divisorFrequencia
+Alarme <= BLOCO_MAQ_PRINCIPAL:inst3.Alarme
+Enchimento <= BLOCO_MAQ_PRINCIPAL:inst3.Enchimento
+Vedacao <= BLOCO_MAQ_PRINCIPAL:inst3.Vedacao
+A_display <= exibir_display:inst1.A_display
+OP => contador_de_rolhas:inst51.CLK_registrador
+B_display <= exibir_display:inst1.B_display
+C_display <= exibir_display:inst1.C_display
+D_display <= exibir_display:inst1.D_display
+E_display <= exibir_display:inst1.E_display
+F_display <= exibir_display:inst1.F_display
+G_display <= exibir_display:inst1.G_display
+digito1 <= exibir_display:inst1.digito1
+digito2 <= exibir_display:inst1.digito2
+
+
+|problema3_industria|BLOCO_MAQ_PRINCIPAL:inst3
+Motor <= inst59.DB_MAX_OUTPUT_PORT_TYPE
+Start/Stop => inst59.IN0
+Start/Stop => ST_PG_CH_RO.IN3
+Start/Stop => Q1_Q0not_ST_EB.IN0
+Start/Stop => Q1not_ST_PG_CHnot_RO.IN2
+Start/Stop => Q0_ST_PG.IN1
+Start/Stop => ST_EB_Q1not_Q0.IN0
+Start/Stop => Q1not_ST_PG_CH_RO.IN2
+Start/Stop => Q1_Q0not_ST_EBnot.IN2
+Start/Stop => Q1not_ST_PGnot_EBnot.IN1
+Start/Stop => Q0not_ST_PG_RO.IN1
+Start/Stop => Q1_ST_PG_EB.IN1
+Start/Stop => inst60.IN0
+Start/Stop => inst61.IN0
+Start/Stop => inst62.IN0
+PG => Q1not_ST_PG_CH_RO.IN0
+PG => Q1_ST_PG_d1.IN2
+PG => ST_PG_CH_RO.IN2
+PG => Q1_Q0_PG_d1.IN1
+PG => Q1not_ST_PG_CHnot_RO.IN4
+PG => Q1_Q0_PG.IN2
+PG => Q0_ST_PG.IN2
+PG => PGnot.IN0
+PG => Q0not_ST_PG_RO.IN2
+PG => Q1_ST_PG_EB.IN2
+PG => Q1_Q0_ST_PG_EBnot.IN3
+PG => PGnotAl.IN0
+PG => PGnotAl54.IN0
+PG => Q1not_ST_PG_ROnot.IN2
+PG => Q1_Q0not_ST_PG.IN3
+CLK => D0.CLK
+CLK => D1.CLK
+RO => Q1not_ST_PG_CHnot_RO.IN0
+RO => ST_PG_CH_RO.IN0
+RO => Q1not_ST_PG_CH_RO.IN4
+RO => Q0not_ST_PG_RO.IN3
+CH => ST_PG_CH_RO.IN1
+CH => Q1_Q0_PG_d1.IN2
+CH => Q0not032.IN0
+CH => Q1not_ST_PG_CH_RO.IN3
+CH => ROnotAl.IN0
+EB => Q1_Q0not_ST_EB.IN1
+EB => ST_EB_Q1not_Q0.IN1
+EB => EBnot.IN0
+EB => Q1_ST_PG_EB.IN3
+EB => Q0not47.IN0
+EB => Q0not_ST_PGnot_EB.IN3
+EB => Q1not_ST_PGnot_EB.IN3
+Alarme <= inst60.DB_MAX_OUTPUT_PORT_TYPE
+Enchimento <= inst61.DB_MAX_OUTPUT_PORT_TYPE
+Vedacao <= inst62.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|exibir_display:inst1
+digito1 <= demux_digito:inst9.d1
+CLK_divisorFrequencia => divisor_frequencia:inst4.CLK
+digito2 <= demux_digito:inst9.d0
+A_display <= 7447:inst12.OA
+D2 => 74273:inst46.D2
+D3 => 74273:inst46.D3
+D1 => 74273:inst46.D1
+D4 => 74273:inst46.D4
+D7 => 74273:inst46.D7
+D6 => 74273:inst46.D6
+D5 => 74273:inst46.D5
+D8 => 74273:inst46.D8
+CLK => 74273:inst46.CLK
+B_display <= 7447:inst12.OB
+C_display <= 7447:inst12.OC
+D_display <= 7447:inst12.OD
+E_display <= 7447:inst12.OE
+F_display <= 7447:inst12.OF
+G_display <= 7447:inst12.OG
+
+
+|problema3_industria|exibir_display:inst1|demux_digito:inst9
+d1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+saida_cont => inst.IN0
+saida_cont => inst2.IN0
+d0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|exibir_display:inst1|contador_2bits:inst8
+saida_cont <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK_dividido => inst.CLK
+
+
+|problema3_industria|exibir_display:inst1|divisor_frequencia:inst4
+CLOCK_dividido <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+
+
+|problema3_industria|exibir_display:inst1|7447:inst12
+OG <= 87.DB_MAX_OUTPUT_PORT_TYPE
+C => 25.IN0
+LTN => 25.IN1
+LTN => 27.IN1
+LTN => 29.IN1
+LTN => 13.IN5
+LTN => 38.IN3
+BIN => 37.IN0
+B => 27.IN0
+D => 14.IN0
+A => 29.IN0
+RBIN => 15.IN0
+OF <= 86.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 85.DB_MAX_OUTPUT_PORT_TYPE
+RBON <= 13.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|exibir_display:inst1|lpm_mux1:inst11
+data0x[0] => lpm_mux:lpm_mux_component.data[0][0]
+data0x[1] => lpm_mux:lpm_mux_component.data[0][1]
+data0x[2] => lpm_mux:lpm_mux_component.data[0][2]
+data0x[3] => lpm_mux:lpm_mux_component.data[0][3]
+data1x[0] => lpm_mux:lpm_mux_component.data[1][0]
+data1x[1] => lpm_mux:lpm_mux_component.data[1][1]
+data1x[2] => lpm_mux:lpm_mux_component.data[1][2]
+data1x[3] => lpm_mux:lpm_mux_component.data[1][3]
+sel => lpm_mux:lpm_mux_component.sel[0]
+result[0] <= lpm_mux:lpm_mux_component.result[0]
+result[1] <= lpm_mux:lpm_mux_component.result[1]
+result[2] <= lpm_mux:lpm_mux_component.result[2]
+result[3] <= lpm_mux:lpm_mux_component.result[3]
+
+
+|problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component
+data[0][0] => muxlut:$00009.data[0]
+data[0][1] => muxlut:$00011.data[0]
+data[0][2] => muxlut:$00013.data[0]
+data[0][3] => muxlut:$00015.data[0]
+data[1][0] => muxlut:$00009.data[1]
+data[1][1] => muxlut:$00011.data[1]
+data[1][2] => muxlut:$00013.data[1]
+data[1][3] => muxlut:$00015.data[1]
+sel[0] => muxlut:$00015.select[0]
+sel[0] => muxlut:$00013.select[0]
+sel[0] => muxlut:$00011.select[0]
+sel[0] => muxlut:$00009.select[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= altshift:external_latency_ffs.result[0]
+result[1] <= altshift:external_latency_ffs.result[1]
+result[2] <= altshift:external_latency_ffs.result[2]
+result[3] <= altshift:external_latency_ffs.result[3]
+
+
+|problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|altshift:external_latency_ffs
+data[0] => result[0].DATAIN
+data[1] => result[1].DATAIN
+data[2] => result[2].DATAIN
+data[3] => result[3].DATAIN
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00009
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00011
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00013
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component|muxlut:$00015
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|exibir_display:inst1|74185:inst56
+Y1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
+A => 56.IN0
+A => 29.IN0
+A => 29.IN3
+A => 32.IN0
+A => 32.IN3
+A => 33.IN0
+A => 33.IN3
+A => 34.IN0
+A => 34.IN3
+A => 37.IN3
+A => 24.IN0
+A => 24.IN3
+A => 27.IN3
+A => 28.IN3
+A => 19.IN3
+A => 18.IN3
+A => 15.IN3
+C => 54.IN0
+C => 33.IN1
+C => 34.IN2
+C => 36.IN1
+C => 37.IN1
+C => 38.IN1
+C => 22.IN1
+C => 25.IN2
+C => 26.IN1
+C => 19.IN1
+C => 17.IN1
+C => 14.IN1
+C => 12.IN1
+C => 11.IN1
+C => 10.IN1
+C => 9.IN0
+C => 5.IN0
+C => 6.IN1
+D => 53.IN0
+D => 35.IN2
+D => 37.IN2
+D => 38.IN2
+D => 21.IN2
+D => 22.IN2
+D => 25.IN4
+D => 28.IN2
+D => 19.IN2
+D => 17.IN2
+D => 16.IN2
+D => 15.IN2
+D => 13.IN2
+D => 12.IN2
+D => 11.IN2
+D => 4.IN1
+D => 5.IN1
+D => 6.IN2
+E => 30.IN4
+E => 52.IN0
+E => 31.IN4
+E => 33.IN4
+E => 34.IN4
+E => 38.IN4
+E => 23.IN4
+E => 26.IN4
+E => 27.IN4
+E => 28.IN4
+E => 19.IN4
+E => 18.IN4
+E => 16.IN4
+E => 13.IN4
+E => 10.IN2
+E => 9.IN2
+E => 3.IN2
+GN => 79.IN0
+GN => 41.IN2
+GN => 41.IN3
+GN => 43.IN1
+GN => 43.IN2
+GN => 43.IN3
+GN => 45.IN6
+GN => 45.IN7
+GN => 82.IN0
+GN => 82.IN1
+B => 31.IN1
+B => 32.IN1
+B => 34.IN1
+B => 55.IN0
+B => 36.IN0
+B => 20.IN0
+B => 20.IN3
+B => 23.IN1
+B => 24.IN1
+B => 26.IN0
+B => 26.IN3
+B => 28.IN0
+B => 18.IN0
+B => 17.IN0
+B => 10.IN0
+B => 8.IN0
+B => 4.IN0
+B => 6.IN0
+Y2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+Y4 <= 81.DB_MAX_OUTPUT_PORT_TYPE
+Y5 <= 82.DB_MAX_OUTPUT_PORT_TYPE
+Y6 <= 48.DB_MAX_OUTPUT_PORT_TYPE
+Y7 <= <VCC>
+Y8 <= <VCC>
+
+
+|problema3_industria|exibir_display:inst1|74185:inst
+Y1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
+A => 56.IN0
+A => 29.IN0
+A => 29.IN3
+A => 32.IN0
+A => 32.IN3
+A => 33.IN0
+A => 33.IN3
+A => 34.IN0
+A => 34.IN3
+A => 37.IN3
+A => 24.IN0
+A => 24.IN3
+A => 27.IN3
+A => 28.IN3
+A => 19.IN3
+A => 18.IN3
+A => 15.IN3
+C => 54.IN0
+C => 33.IN1
+C => 34.IN2
+C => 36.IN1
+C => 37.IN1
+C => 38.IN1
+C => 22.IN1
+C => 25.IN2
+C => 26.IN1
+C => 19.IN1
+C => 17.IN1
+C => 14.IN1
+C => 12.IN1
+C => 11.IN1
+C => 10.IN1
+C => 9.IN0
+C => 5.IN0
+C => 6.IN1
+D => 53.IN0
+D => 35.IN2
+D => 37.IN2
+D => 38.IN2
+D => 21.IN2
+D => 22.IN2
+D => 25.IN4
+D => 28.IN2
+D => 19.IN2
+D => 17.IN2
+D => 16.IN2
+D => 15.IN2
+D => 13.IN2
+D => 12.IN2
+D => 11.IN2
+D => 4.IN1
+D => 5.IN1
+D => 6.IN2
+E => 30.IN4
+E => 52.IN0
+E => 31.IN4
+E => 33.IN4
+E => 34.IN4
+E => 38.IN4
+E => 23.IN4
+E => 26.IN4
+E => 27.IN4
+E => 28.IN4
+E => 19.IN4
+E => 18.IN4
+E => 16.IN4
+E => 13.IN4
+E => 10.IN2
+E => 9.IN2
+E => 3.IN2
+GN => 79.IN0
+GN => 41.IN2
+GN => 41.IN3
+GN => 43.IN1
+GN => 43.IN2
+GN => 43.IN3
+GN => 45.IN6
+GN => 45.IN7
+GN => 82.IN0
+GN => 82.IN1
+B => 31.IN1
+B => 32.IN1
+B => 34.IN1
+B => 55.IN0
+B => 36.IN0
+B => 20.IN0
+B => 20.IN3
+B => 23.IN1
+B => 24.IN1
+B => 26.IN0
+B => 26.IN3
+B => 28.IN0
+B => 18.IN0
+B => 17.IN0
+B => 10.IN0
+B => 8.IN0
+B => 4.IN0
+B => 6.IN0
+Y2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+Y4 <= 81.DB_MAX_OUTPUT_PORT_TYPE
+Y5 <= 82.DB_MAX_OUTPUT_PORT_TYPE
+Y6 <= 48.DB_MAX_OUTPUT_PORT_TYPE
+Y7 <= <VCC>
+Y8 <= <VCC>
+
+
+|problema3_industria|exibir_display:inst1|74273:inst46
+Q1 <= 19.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 19.ACLR
+CLRN => 18.ACLR
+CLRN => 17.ACLR
+CLRN => 16.ACLR
+CLRN => 15.ACLR
+CLRN => 14.ACLR
+CLRN => 13.ACLR
+CLRN => 12.ACLR
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+CLK => 15.CLK
+CLK => 14.CLK
+CLK => 13.CLK
+CLK => 12.CLK
+D1 => 19.DATAIN
+Q2 <= 18.DB_MAX_OUTPUT_PORT_TYPE
+D2 => 18.DATAIN
+Q3 <= 17.DB_MAX_OUTPUT_PORT_TYPE
+D3 => 17.DATAIN
+Q4 <= 16.DB_MAX_OUTPUT_PORT_TYPE
+D4 => 16.DATAIN
+Q5 <= 15.DB_MAX_OUTPUT_PORT_TYPE
+D5 => 15.DATAIN
+Q6 <= 14.DB_MAX_OUTPUT_PORT_TYPE
+D6 => 14.DATAIN
+Q7 <= 13.DB_MAX_OUTPUT_PORT_TYPE
+D7 => 13.DATAIN
+Q8 <= 12.DB_MAX_OUTPUT_PORT_TYPE
+D8 => 12.DATAIN
+
+
+|problema3_industria|exibir_display:inst1|74185:inst55
+Y1 <= 41.DB_MAX_OUTPUT_PORT_TYPE
+A => 56.IN0
+A => 29.IN0
+A => 29.IN3
+A => 32.IN0
+A => 32.IN3
+A => 33.IN0
+A => 33.IN3
+A => 34.IN0
+A => 34.IN3
+A => 37.IN3
+A => 24.IN0
+A => 24.IN3
+A => 27.IN3
+A => 28.IN3
+A => 19.IN3
+A => 18.IN3
+A => 15.IN3
+C => 54.IN0
+C => 33.IN1
+C => 34.IN2
+C => 36.IN1
+C => 37.IN1
+C => 38.IN1
+C => 22.IN1
+C => 25.IN2
+C => 26.IN1
+C => 19.IN1
+C => 17.IN1
+C => 14.IN1
+C => 12.IN1
+C => 11.IN1
+C => 10.IN1
+C => 9.IN0
+C => 5.IN0
+C => 6.IN1
+D => 53.IN0
+D => 35.IN2
+D => 37.IN2
+D => 38.IN2
+D => 21.IN2
+D => 22.IN2
+D => 25.IN4
+D => 28.IN2
+D => 19.IN2
+D => 17.IN2
+D => 16.IN2
+D => 15.IN2
+D => 13.IN2
+D => 12.IN2
+D => 11.IN2
+D => 4.IN1
+D => 5.IN1
+D => 6.IN2
+E => 30.IN4
+E => 52.IN0
+E => 31.IN4
+E => 33.IN4
+E => 34.IN4
+E => 38.IN4
+E => 23.IN4
+E => 26.IN4
+E => 27.IN4
+E => 28.IN4
+E => 19.IN4
+E => 18.IN4
+E => 16.IN4
+E => 13.IN4
+E => 10.IN2
+E => 9.IN2
+E => 3.IN2
+GN => 79.IN0
+GN => 41.IN2
+GN => 41.IN3
+GN => 43.IN1
+GN => 43.IN2
+GN => 43.IN3
+GN => 45.IN6
+GN => 45.IN7
+GN => 82.IN0
+GN => 82.IN1
+B => 31.IN1
+B => 32.IN1
+B => 34.IN1
+B => 55.IN0
+B => 36.IN0
+B => 20.IN0
+B => 20.IN3
+B => 23.IN1
+B => 24.IN1
+B => 26.IN0
+B => 26.IN3
+B => 28.IN0
+B => 18.IN0
+B => 17.IN0
+B => 10.IN0
+B => 8.IN0
+B => 4.IN0
+B => 6.IN0
+Y2 <= 43.DB_MAX_OUTPUT_PORT_TYPE
+Y3 <= 45.DB_MAX_OUTPUT_PORT_TYPE
+Y4 <= 81.DB_MAX_OUTPUT_PORT_TYPE
+Y5 <= 82.DB_MAX_OUTPUT_PORT_TYPE
+Y6 <= 48.DB_MAX_OUTPUT_PORT_TYPE
+Y7 <= <VCC>
+Y8 <= <VCC>
+
+
+|problema3_industria|contador_de_rolhas:inst51
+a0 <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+vedacao => seletor:inst44.VE
+OP => seletor:inst44.OP
+CLK_registrador => 74273:inst46.CLK
+a1 <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+a2 <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+a3 <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+a4 <= a[4].DB_MAX_OUTPUT_PORT_TYPE
+a5 <= a[5].DB_MAX_OUTPUT_PORT_TYPE
+a6 <= a[6].DB_MAX_OUTPUT_PORT_TYPE
+a7 <= a[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|74273:inst46
+Q1 <= 19.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 19.ACLR
+CLRN => 18.ACLR
+CLRN => 17.ACLR
+CLRN => 16.ACLR
+CLRN => 15.ACLR
+CLRN => 14.ACLR
+CLRN => 13.ACLR
+CLRN => 12.ACLR
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+CLK => 15.CLK
+CLK => 14.CLK
+CLK => 13.CLK
+CLK => 12.CLK
+D1 => 19.DATAIN
+Q2 <= 18.DB_MAX_OUTPUT_PORT_TYPE
+D2 => 18.DATAIN
+Q3 <= 17.DB_MAX_OUTPUT_PORT_TYPE
+D3 => 17.DATAIN
+Q4 <= 16.DB_MAX_OUTPUT_PORT_TYPE
+D4 => 16.DATAIN
+Q5 <= 15.DB_MAX_OUTPUT_PORT_TYPE
+D5 => 15.DATAIN
+Q6 <= 14.DB_MAX_OUTPUT_PORT_TYPE
+D6 => 14.DATAIN
+Q7 <= 13.DB_MAX_OUTPUT_PORT_TYPE
+D7 => 13.DATAIN
+Q8 <= 12.DB_MAX_OUTPUT_PORT_TYPE
+D8 => 12.DATAIN
+
+
+|problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42
+resultado0 <= somador_completo:inst33.soma
+A0 => inst30.IN0
+operacao => inst30.IN1
+operacao => somador_completo:inst33.carryIn
+operacao => inst1.IN1
+operacao => inst2.IN1
+operacao => inst4.IN1
+operacao => inst32.IN1
+operacao => inst5.IN1
+operacao => inst6.IN1
+operacao => inst7.IN1
+B0 => somador_completo:inst33.B
+resultado1 <= somador_completo:inst34.soma
+A1 => inst1.IN0
+B1 => somador_completo:inst34.B
+resultado2 <= somador_completo:inst35.soma
+A2 => inst2.IN0
+B2 => somador_completo:inst35.B
+resultado3 <= somador_completo:inst36.soma
+A3 => inst4.IN0
+B3 => somador_completo:inst36.B
+resultado4 <= somador_completo:inst37.soma
+A4 => inst32.IN0
+B4 => somador_completo:inst37.B
+resultado5 <= somador_completo:inst38.soma
+A5 => inst5.IN0
+B5 => somador_completo:inst38.B
+resultado6 <= somador_completo:inst39.soma
+A6 => inst6.IN0
+B6 => somador_completo:inst39.B
+resultado7 <= somador_completo:inst40.soma
+A7 => inst7.IN0
+B7 => somador_completo:inst40.B
+
+
+|problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst33
+soma <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst2.IN0
+B => inst3.IN1
+B => inst2.IN1
+B => inst.IN0
+carryIn => inst4.IN1
+carryIn => inst1.IN1
+carryIn => inst.IN1
+carryOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst34
+soma <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst2.IN0
+B => inst3.IN1
+B => inst2.IN1
+B => inst.IN0
+carryIn => inst4.IN1
+carryIn => inst1.IN1
+carryIn => inst.IN1
+carryOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst35
+soma <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst2.IN0
+B => inst3.IN1
+B => inst2.IN1
+B => inst.IN0
+carryIn => inst4.IN1
+carryIn => inst1.IN1
+carryIn => inst.IN1
+carryOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst36
+soma <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst2.IN0
+B => inst3.IN1
+B => inst2.IN1
+B => inst.IN0
+carryIn => inst4.IN1
+carryIn => inst1.IN1
+carryIn => inst.IN1
+carryOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst37
+soma <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst2.IN0
+B => inst3.IN1
+B => inst2.IN1
+B => inst.IN0
+carryIn => inst4.IN1
+carryIn => inst1.IN1
+carryIn => inst.IN1
+carryOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst38
+soma <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst2.IN0
+B => inst3.IN1
+B => inst2.IN1
+B => inst.IN0
+carryIn => inst4.IN1
+carryIn => inst1.IN1
+carryIn => inst.IN1
+carryOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst39
+soma <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst2.IN0
+B => inst3.IN1
+B => inst2.IN1
+B => inst.IN0
+carryIn => inst4.IN1
+carryIn => inst1.IN1
+carryIn => inst.IN1
+carryOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|somadorSubtrator_rolhas:inst42|somador_completo:inst40
+soma <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst2.IN0
+B => inst3.IN1
+B => inst2.IN1
+B => inst.IN0
+carryIn => inst4.IN1
+carryIn => inst1.IN1
+carryIn => inst.IN1
+carryOut <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4
+data0x[0] => lpm_mux:lpm_mux_component.data[0][0]
+data0x[1] => lpm_mux:lpm_mux_component.data[0][1]
+data0x[2] => lpm_mux:lpm_mux_component.data[0][2]
+data0x[3] => lpm_mux:lpm_mux_component.data[0][3]
+data0x[4] => lpm_mux:lpm_mux_component.data[0][4]
+data0x[5] => lpm_mux:lpm_mux_component.data[0][5]
+data0x[6] => lpm_mux:lpm_mux_component.data[0][6]
+data0x[7] => lpm_mux:lpm_mux_component.data[0][7]
+data1x[0] => lpm_mux:lpm_mux_component.data[1][0]
+data1x[1] => lpm_mux:lpm_mux_component.data[1][1]
+data1x[2] => lpm_mux:lpm_mux_component.data[1][2]
+data1x[3] => lpm_mux:lpm_mux_component.data[1][3]
+data1x[4] => lpm_mux:lpm_mux_component.data[1][4]
+data1x[5] => lpm_mux:lpm_mux_component.data[1][5]
+data1x[6] => lpm_mux:lpm_mux_component.data[1][6]
+data1x[7] => lpm_mux:lpm_mux_component.data[1][7]
+data2x[0] => lpm_mux:lpm_mux_component.data[2][0]
+data2x[1] => lpm_mux:lpm_mux_component.data[2][1]
+data2x[2] => lpm_mux:lpm_mux_component.data[2][2]
+data2x[3] => lpm_mux:lpm_mux_component.data[2][3]
+data2x[4] => lpm_mux:lpm_mux_component.data[2][4]
+data2x[5] => lpm_mux:lpm_mux_component.data[2][5]
+data2x[6] => lpm_mux:lpm_mux_component.data[2][6]
+data2x[7] => lpm_mux:lpm_mux_component.data[2][7]
+data3x[0] => lpm_mux:lpm_mux_component.data[3][0]
+data3x[1] => lpm_mux:lpm_mux_component.data[3][1]
+data3x[2] => lpm_mux:lpm_mux_component.data[3][2]
+data3x[3] => lpm_mux:lpm_mux_component.data[3][3]
+data3x[4] => lpm_mux:lpm_mux_component.data[3][4]
+data3x[5] => lpm_mux:lpm_mux_component.data[3][5]
+data3x[6] => lpm_mux:lpm_mux_component.data[3][6]
+data3x[7] => lpm_mux:lpm_mux_component.data[3][7]
+sel[0] => lpm_mux:lpm_mux_component.sel[0]
+sel[1] => lpm_mux:lpm_mux_component.sel[1]
+result[0] <= lpm_mux:lpm_mux_component.result[0]
+result[1] <= lpm_mux:lpm_mux_component.result[1]
+result[2] <= lpm_mux:lpm_mux_component.result[2]
+result[3] <= lpm_mux:lpm_mux_component.result[3]
+result[4] <= lpm_mux:lpm_mux_component.result[4]
+result[5] <= lpm_mux:lpm_mux_component.result[5]
+result[6] <= lpm_mux:lpm_mux_component.result[6]
+result[7] <= lpm_mux:lpm_mux_component.result[7]
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component
+data[0][0] => muxlut:$00009.data[0]
+data[0][1] => muxlut:$00011.data[0]
+data[0][2] => muxlut:$00013.data[0]
+data[0][3] => muxlut:$00015.data[0]
+data[0][4] => muxlut:$00017.data[0]
+data[0][5] => muxlut:$00019.data[0]
+data[0][6] => muxlut:$00021.data[0]
+data[0][7] => muxlut:$00023.data[0]
+data[1][0] => muxlut:$00009.data[1]
+data[1][1] => muxlut:$00011.data[1]
+data[1][2] => muxlut:$00013.data[1]
+data[1][3] => muxlut:$00015.data[1]
+data[1][4] => muxlut:$00017.data[1]
+data[1][5] => muxlut:$00019.data[1]
+data[1][6] => muxlut:$00021.data[1]
+data[1][7] => muxlut:$00023.data[1]
+data[2][0] => muxlut:$00009.data[2]
+data[2][1] => muxlut:$00011.data[2]
+data[2][2] => muxlut:$00013.data[2]
+data[2][3] => muxlut:$00015.data[2]
+data[2][4] => muxlut:$00017.data[2]
+data[2][5] => muxlut:$00019.data[2]
+data[2][6] => muxlut:$00021.data[2]
+data[2][7] => muxlut:$00023.data[2]
+data[3][0] => muxlut:$00009.data[3]
+data[3][1] => muxlut:$00011.data[3]
+data[3][2] => muxlut:$00013.data[3]
+data[3][3] => muxlut:$00015.data[3]
+data[3][4] => muxlut:$00017.data[3]
+data[3][5] => muxlut:$00019.data[3]
+data[3][6] => muxlut:$00021.data[3]
+data[3][7] => muxlut:$00023.data[3]
+sel[0] => muxlut:$00023.select[0]
+sel[0] => muxlut:$00021.select[0]
+sel[0] => muxlut:$00019.select[0]
+sel[0] => muxlut:$00017.select[0]
+sel[0] => muxlut:$00015.select[0]
+sel[0] => muxlut:$00013.select[0]
+sel[0] => muxlut:$00011.select[0]
+sel[0] => muxlut:$00009.select[0]
+sel[1] => muxlut:$00023.select[1]
+sel[1] => muxlut:$00021.select[1]
+sel[1] => muxlut:$00019.select[1]
+sel[1] => muxlut:$00017.select[1]
+sel[1] => muxlut:$00015.select[1]
+sel[1] => muxlut:$00013.select[1]
+sel[1] => muxlut:$00011.select[1]
+sel[1] => muxlut:$00009.select[1]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= altshift:external_latency_ffs.result[0]
+result[1] <= altshift:external_latency_ffs.result[1]
+result[2] <= altshift:external_latency_ffs.result[2]
+result[3] <= altshift:external_latency_ffs.result[3]
+result[4] <= altshift:external_latency_ffs.result[4]
+result[5] <= altshift:external_latency_ffs.result[5]
+result[6] <= altshift:external_latency_ffs.result[6]
+result[7] <= altshift:external_latency_ffs.result[7]
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|altshift:external_latency_ffs
+data[0] => result[0].DATAIN
+data[1] => result[1].DATAIN
+data[2] => result[2].DATAIN
+data[3] => result[3].DATAIN
+data[4] => result[4].DATAIN
+data[5] => result[5].DATAIN
+data[6] => result[6].DATAIN
+data[7] => result[7].DATAIN
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= data[4].DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= data[5].DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= data[6].DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= data[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00009
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00011
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00013
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00015
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00017
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00019
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00021
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component|muxlut:$00023
+clock => clock_out.DATAIN
+aclr => aclr_out.DATAIN
+clken => clken_out.DATAIN
+result <= result_node.DB_MAX_OUTPUT_PORT_TYPE
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+aclr_out <= aclr.DB_MAX_OUTPUT_PORT_TYPE
+clken_out <= clken.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_constant0:inst
+result[0] <= lpm_constant:lpm_constant_component.result[0]
+result[1] <= lpm_constant:lpm_constant_component.result[1]
+result[2] <= lpm_constant:lpm_constant_component.result[2]
+result[3] <= lpm_constant:lpm_constant_component.result[3]
+result[4] <= lpm_constant:lpm_constant_component.result[4]
+result[5] <= lpm_constant:lpm_constant_component.result[5]
+result[6] <= lpm_constant:lpm_constant_component.result[6]
+result[7] <= lpm_constant:lpm_constant_component.result[7]
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_constant0:inst|lpm_constant:lpm_constant_component
+result[0] <= <VCC>
+result[1] <= <VCC>
+result[2] <= <VCC>
+result[3] <= <VCC>
+result[4] <= <VCC>
+result[5] <= <VCC>
+result[6] <= <VCC>
+result[7] <= <VCC>
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_constant1:inst26
+result[0] <= lpm_constant:lpm_constant_component.result[0]
+result[1] <= lpm_constant:lpm_constant_component.result[1]
+result[2] <= lpm_constant:lpm_constant_component.result[2]
+result[3] <= lpm_constant:lpm_constant_component.result[3]
+result[4] <= lpm_constant:lpm_constant_component.result[4]
+result[5] <= lpm_constant:lpm_constant_component.result[5]
+result[6] <= lpm_constant:lpm_constant_component.result[6]
+result[7] <= lpm_constant:lpm_constant_component.result[7]
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_constant1:inst26|lpm_constant:lpm_constant_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <VCC>
+result[3] <= <GND>
+result[4] <= <VCC>
+result[5] <= <GND>
+result[6] <= <GND>
+result[7] <= <GND>
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_constant2:inst27
+result[0] <= lpm_constant:lpm_constant_component.result[0]
+result[1] <= lpm_constant:lpm_constant_component.result[1]
+result[2] <= lpm_constant:lpm_constant_component.result[2]
+result[3] <= lpm_constant:lpm_constant_component.result[3]
+result[4] <= lpm_constant:lpm_constant_component.result[4]
+result[5] <= lpm_constant:lpm_constant_component.result[5]
+result[6] <= lpm_constant:lpm_constant_component.result[6]
+result[7] <= lpm_constant:lpm_constant_component.result[7]
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_constant2:inst27|lpm_constant:lpm_constant_component
+result[0] <= <GND>
+result[1] <= <VCC>
+result[2] <= <GND>
+result[3] <= <VCC>
+result[4] <= <GND>
+result[5] <= <GND>
+result[6] <= <GND>
+result[7] <= <GND>
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_constant3:inst28
+result[0] <= lpm_constant:lpm_constant_component.result[0]
+result[1] <= lpm_constant:lpm_constant_component.result[1]
+result[2] <= lpm_constant:lpm_constant_component.result[2]
+result[3] <= lpm_constant:lpm_constant_component.result[3]
+result[4] <= lpm_constant:lpm_constant_component.result[4]
+result[5] <= lpm_constant:lpm_constant_component.result[5]
+result[6] <= lpm_constant:lpm_constant_component.result[6]
+result[7] <= lpm_constant:lpm_constant_component.result[7]
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_constant3:inst28|lpm_constant:lpm_constant_component
+result[0] <= <GND>
+result[1] <= <GND>
+result[2] <= <GND>
+result[3] <= <GND>
+result[4] <= <GND>
+result[5] <= <GND>
+result[6] <= <GND>
+result[7] <= <GND>
+
+
+|problema3_industria|contador_de_rolhas:inst51|seletor:inst44
+Sel[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Sel[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+OP => inst2.IN0
+OP => inst10.IN0
+SE_5 => inst2.IN1
+SE_5 => inst3.IN1
+SE_5 => inst1.IN1
+VE => inst9.IN0
+VE => inst12.IN0
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29
+dataa[0] => lpm_compare:lpm_compare_component.dataa[0]
+dataa[1] => lpm_compare:lpm_compare_component.dataa[1]
+dataa[2] => lpm_compare:lpm_compare_component.dataa[2]
+dataa[3] => lpm_compare:lpm_compare_component.dataa[3]
+dataa[4] => lpm_compare:lpm_compare_component.dataa[4]
+dataa[5] => lpm_compare:lpm_compare_component.dataa[5]
+dataa[6] => lpm_compare:lpm_compare_component.dataa[6]
+dataa[7] => lpm_compare:lpm_compare_component.dataa[7]
+aleb <= lpm_compare:lpm_compare_component.aleb
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component
+dataa[0] => comptree:comparator.dataa[0]
+dataa[1] => comptree:comparator.dataa[1]
+dataa[2] => comptree:comparator.dataa[2]
+dataa[3] => comptree:comparator.dataa[3]
+dataa[4] => comptree:comparator.dataa[4]
+dataa[5] => comptree:comparator.dataa[5]
+dataa[6] => comptree:comparator.dataa[6]
+dataa[7] => comptree:comparator.dataa[7]
+datab[0] => comptree:comparator.datab[0]
+datab[1] => comptree:comparator.datab[1]
+datab[2] => comptree:comparator.datab[2]
+datab[3] => comptree:comparator.datab[3]
+datab[4] => comptree:comparator.datab[4]
+datab[5] => comptree:comparator.datab[5]
+datab[6] => comptree:comparator.datab[6]
+datab[7] => comptree:comparator.datab[7]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+alb <= alb~1.DB_MAX_OUTPUT_PORT_TYPE
+aeb <= aeb~0.DB_MAX_OUTPUT_PORT_TYPE
+agb <= agb~0.DB_MAX_OUTPUT_PORT_TYPE
+aneb <= aneb~1.DB_MAX_OUTPUT_PORT_TYPE
+ageb <= ageb~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator
+dataa[0] => cmpchain:cmp_end.dataa[0]
+dataa[1] => cmpchain:cmp_end.dataa[1]
+dataa[2] => cmpchain:cmp_end.dataa[2]
+dataa[3] => cmpchain:cmp_end.dataa[3]
+dataa[4] => cmpchain:cmp_end.dataa[4]
+dataa[5] => cmpchain:cmp_end.dataa[5]
+dataa[6] => cmpchain:cmp_end.dataa[6]
+dataa[7] => cmpchain:cmp_end.dataa[7]
+datab[0] => cmpchain:cmp_end.datab[0]
+datab[1] => cmpchain:cmp_end.datab[1]
+datab[2] => cmpchain:cmp_end.datab[2]
+datab[3] => cmpchain:cmp_end.datab[3]
+datab[4] => cmpchain:cmp_end.datab[4]
+datab[5] => cmpchain:cmp_end.datab[5]
+datab[6] => cmpchain:cmp_end.datab[6]
+datab[7] => cmpchain:cmp_end.datab[7]
+clk => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+aeb <= aeb~0.DB_MAX_OUTPUT_PORT_TYPE
+agb <= cmpchain:cmp_end.agb
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|comptree:comparator|cmpchain:cmp_end
+clk => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+aeb <= aeb~0.DB_MAX_OUTPUT_PORT_TYPE
+agb <= agb_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|altshift:aeb_ext_lat_ffs
+data[0] => result[0].DATAIN
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problema3_industria|contador_de_rolhas:inst51|lpm_compare0:inst29|lpm_compare:lpm_compare_component|altshift:agb_ext_lat_ffs
+data[0] => result[0].DATAIN
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

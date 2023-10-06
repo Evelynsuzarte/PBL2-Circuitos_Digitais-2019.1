@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 22.900 ns
+From           : RO
+To             : contador_de_rolhas:inst51|74273:inst46|12
+From Clock     : --
+To Clock       : OP
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 86.400 ns
+From           : exibir_display:inst1|contador_2bits:inst8|inst
+To             : B_display
+From Clock     : CLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 27.200 ns
+From           : RO
+To             : Enchimento
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.900 ns
+From           : CLK
+To             : contador_de_rolhas:inst51|74273:inst46|12
+From Clock     : --
+To Clock       : OP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'OP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 62.11 MHz ( period = 16.100 ns )
+From           : contador_de_rolhas:inst51|74273:inst46|17
+To             : contador_de_rolhas:inst51|74273:inst46|12
+From Clock     : OP
+To Clock       : OP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 175.44 MHz ( period = 5.700 ns )
+From           : BLOCO_MAQ_PRINCIPAL:inst3|D1
+To             : BLOCO_MAQ_PRINCIPAL:inst3|D0
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

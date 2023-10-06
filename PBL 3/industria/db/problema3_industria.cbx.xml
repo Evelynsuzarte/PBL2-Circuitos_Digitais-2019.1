@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="problema3_industria">
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema3_industria|contador_de_rolhas:inst51|lpm_constant1:inst26|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_vf6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema3_industria|contador_de_rolhas:inst51|lpm_constant2:inst27|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_bh6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema3_industria|contador_de_rolhas:inst51|lpm_constant3:inst28|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_qf6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema3_industria|contador_de_rolhas:inst51|lpm_constant0:inst|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_6j6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema3_industria|contador_de_rolhas:inst51|lpm_mux0:Multi_4|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_t9c.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|problema3_industria|exibir_display:inst1|lpm_mux1:inst11|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_m9c.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
